@@ -1,0 +1,14 @@
+2020-10-31 00:43:52.1034 ERROR SPWrapper CallNotesForReminder Ex - Could not find stored procedure 'sp_GetCallNotesForReminder'.
+2020-10-31 00:44:40.8021 ERROR SPWrapper CallNotesForReminder Ex - Could not find stored procedure 'sp_GetCallNotesForReminder'.
+2020-10-31 00:44:49.5733 ERROR SPWrapper CallNotesForReminder Ex - Could not find stored procedure 'sp_GetCallNotesForReminder'.
+2020-10-31 00:45:46.9670 ERROR SPWrapper CallNotesForReminder Ex - Could not find stored procedure 'sp_GetCallNotesForReminder'.
+2020-10-31 00:45:56.0349 ERROR SPWrapper CallNotesForReminder Ex - Could not find stored procedure 'sp_GetCallNotesForReminder'.
+2020-10-31 00:46:39.1629 ERROR SPWrapper CallNotesForReminder Ex - Could not find stored procedure 'sp_GetCallNotesForReminder'.
+2020-10-31 00:47:07.1235 ERROR SPWrapper CallNotesForReminder Ex - Could not find stored procedure 'sp_GetCallNotesForReminder'.
+2020-10-31 00:48:12.5549 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2020-10-31 00:48:43.0900 ERROR SPWrapper GetCompanyList Ex - A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2020-10-31 00:48:43.1040 ERROR SPWrapper GetCompanyList Ex - A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2020-10-31 00:49:34.5447 ERROR SPWrapper CallNotesForReminder Ex - Could not find stored procedure 'sp_GetCallNotesForReminder'.
+2020-10-31 00:49:54.5120 ERROR SPWrapper CallNotesForReminder Ex - Could not find stored procedure 'sp_GetCallNotesForReminder'.
+2020-10-31 00:50:01.0025 ERROR SPWrapper CallNotesForReminder Ex - Could not find stored procedure 'sp_GetCallNotesForReminder'.
+2020-10-31 00:50:44.6154 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.

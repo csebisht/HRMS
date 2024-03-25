@@ -1,0 +1,107 @@
+2020-02-14 00:05:49.6514 ERROR SPWrapper SaveCompanyAddresss Ex - Procedure or function 'sp_SaveCompanyAddress' expects parameter '@Sublocation', which was not supplied.
+2020-02-14 00:56:40.8221 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Contact Details Saved
+2020-02-14 00:56:40.8881 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Contact Details Saved
+2020-02-14 00:56:40.8881 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Contact Details Saved
+2020-02-14 00:56:40.9061 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Contact Details Saved
+2020-02-14 00:56:40.9511 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Hiring Details Saved
+2020-02-14 00:56:40.9511 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Hiring Details Saved
+2020-02-14 00:56:43.8211 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Call Notes Saved
+2020-02-14 01:01:44.3184 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- CompanyStream Saved
+2020-02-14 01:01:46.9106 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:46.9106 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:46.9546 ERROR CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2020-02-14 01:01:46.9816 ERROR CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2020-02-14 01:01:46.9816 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:46.9816 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:46.9816 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:46.9816 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.0226 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.0666 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.0666 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.0666 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1196 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1376 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1376 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1376 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1376 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1376 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1376 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1526 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1526 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1816 ERROR CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2020-02-14 01:01:47.1836 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1836 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1836 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1836 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1836 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1836 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1836 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1996 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1996 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1996 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1996 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1996 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.1996 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2146 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2146 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2146 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2146 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2146 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2146 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2146 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2146 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2306 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2306 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2306 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2306 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2306 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2306 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2306 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2306 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2476 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2476 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2476 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2476 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2476 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2476 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2476 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2476 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2626 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2626 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2626 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2626 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2626 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2626 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2626 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2776 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2776 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2776 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2776 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2776 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2776 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2776 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2936 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2936 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2936 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2936 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2936 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.2936 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.3086 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.3086 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.3086 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.3086 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.3086 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.3086 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.3256 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.3556 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.3556 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Saved
+2020-02-14 01:01:47.3856 ERROR CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2020-02-14 01:01:47.4206 ERROR CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2020-02-14 01:01:47.4496 ERROR CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2020-02-14 01:01:47.4726 ERROR CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2020-02-14 01:01:47.5056 ERROR CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2020-02-14 01:01:47.5386 ERROR CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2020-02-14 01:01:47.5706 ERROR CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2020-02-14 01:01:47.6086 ERROR CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2020-02-14 01:01:47.6376 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd- Call Notes Saved
+2020-02-14 01:01:47.6376 INFO CompanyID-1167|CompanyNameRelaxo Footwear Ltd-Saved

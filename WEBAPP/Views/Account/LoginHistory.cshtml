@@ -1,0 +1,61 @@
+﻿@model IEnumerable<WEBAPP.Models.LoginHistory>
+
+@{
+    ViewBag.Title = "LoginHistory";
+}
+
+
+<script>
+
+    $(document).ready(function () {
+        $("#sdate").datepicker({
+            dateFormat: 'dd-mm-yy', changeMonth: true,         
+        });
+    });
+
+</script>
+<h2>LoginHistory</h2>
+
+
+
+
+<p>
+    @using (Html.BeginForm("LoginHistory", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form", role = "form" }))
+    {
+        <input type="text" name="Email" required /> <input type="text" name="sDate" id="sdate" />
+        <input type="submit" value="Search" />
+    }
+    </p>
+
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IpAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedOn)
+        </th>
+       
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IpAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedOn)
+        </td>
+        
+    </tr>
+}
+
+</table>

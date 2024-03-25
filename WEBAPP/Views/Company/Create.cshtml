@@ -1,0 +1,502 @@
+﻿@model WEBAPP.Models.Company
+
+@{
+
+    ViewBag.Title = "Edit";
+}
+
+<style>
+  
+
+    #exTab1 .tab-content {
+        color: white;
+        background-color: #428bca;
+        padding: 5px 15px;
+    }
+
+    #exTab2 h3 {
+        color: white;
+        background-color: #428bca;
+        padding: 5px 15px;
+    }
+
+    /* remove border radius for the tab */
+
+    #exTab1 .nav-pills > li > a {
+        border-radius: 0;
+    }
+
+    /* change border radius for the tab , apply corners on top*/
+
+    #exTab3 .nav-pills > li > a {
+        border-radius: 4px 4px 0 0;
+    }
+
+    #exTab3 .tab-content {
+        color: white;
+        background-color: #428bca;
+        padding: 5px 15px;
+    }
+
+    .modal-dialog {
+        max-width: 65% !important;
+    }
+
+    .validation-summary-errors {
+        color: red;
+    }
+
+    .input-validation-error {
+        border: 1px solid red;
+    }
+</style>
+
+<script>
+
+
+    $(function () {
+        $("#DateGiven").datepicker({ dateFormat: 'mm-dd-yy' ,changeMonth: true,
+      changeYear: true});
+    });
+
+    function fn_SaveStream() {
+        debugger;
+        var arr = new Array();
+        $('#tbl_stream tbody tr').each(function (i, tr) {
+            debugger;
+            arr[i] = {
+                Course: ($(tr).find("td:nth-child(1) select.Course")).val(),
+                Stream: ($(tr).find("td:nth-child(2) select.Stream")).val().toString(),
+            }
+
+        });
+
+        $('#t_JsonString').val(JSON.stringify(arr));
+    }
+
+    function GetStreambyCourse(input) {
+        debugger;
+        var stateId = $(input).val();
+        $.ajax
+            ({
+                url: '/Company/GetStreamFromCourse',
+                type: 'POST',
+                datatype: 'application/json',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    CourseId: +stateId
+                }),
+                success: function (result) {
+                    $("#StreamId").html("");
+                    $.each($.parseJSON(result), function (i, city) {
+                        $("#StreamId").append($('<option></option>').val(city.ID).html(city.StreamName))
+                    })
+
+                },
+                error: function () {
+                    alert("Whooaaa! Something went wrong..")
+                },
+            });
+    }
+
+    function GetStreambyappendCourse(input, i) {
+        debugger;
+        var stateId = $(input).val();
+        var id = "#Col" + i;
+        $.ajax
+            ({
+                url: '/Company/GetStreamFromCourse',
+                type: 'POST',
+                datatype: 'application/json',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    CourseId: +stateId
+                }),
+                success: function (result) {
+                    $(id).html("");
+                    $.each($.parseJSON(result), function (i, city) {
+                        $(id).append($('<option></option>').val(city.Id).html(city.StreamName))
+                    })
+
+                },
+                error: function () {
+                    alert("Whooaaa! Something went wrong..")
+                },
+            });
+    }
+    function EditGetStreambyappendCourse(input, i) {
+        debugger;
+
+        var id = "#Col" + i;
+        $.ajax
+            ({
+                url: '/Company/GetStreamFromCourse',
+                type: 'POST',
+                datatype: 'application/json',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    CourseId: +input
+                }),
+                success: function (result) {
+                    $(id).html("");
+
+
+                    $.each($.parseJSON(result), function (i, city) {
+                        $(id).append($('<option></option>').val(city.Id).html(city.StreamName))
+                    })
+
+
+                },
+                error: function () {
+                    alert("Whooaaa! Something went wrong..")
+                },
+            });
+    }
+    function AddRow() {
+        debugger;
+        var length = $("#tbl_stream tbody tr").length;
+        var itemm = $(".CourseId").html();
+
+        var row = $('<tr></tr>');
+        var s = $("<select id=\"selectId\" name=\"selectName\" name='' class='form-control Course'  onchange='GetStreambyappendCourse(this," + length + ")' />");
+
+        $(itemm).appendTo(s);
+        //col 1
+        var rowData = $('<td></td>').html(s);
+        row.append(rowData);
+
+        //col 2
+        rowData = $('<td></td>').html("<Select class='form-control multiple Stream'  name='Col" + length + "' multiple='multiple' id='Col" + length + "' />");
+        row.append(rowData);
+
+        $("#tbl_stream tbody").append(row);
+
+
+    }
+
+    function getCallNote(Id) {
+
+        $.ajax({
+            url: "/Company/getCallNote",
+            data: { 'Id': Id },
+            success: function (data) {
+                debugger;
+                $("#CallId").val(data.Id);
+                $("#Description").val(data.Description);
+                $("#ActivityDate").val(data.t_ActivityDate);
+                $("#CallContactId").val(data.CallContactId);
+
+                if (data.Type) {
+
+                    $("#IsFollowUp").prop("checked", false);
+                }
+                else {
+
+
+                    $("#IsFollowUp").prop("checked", true);
+                }
+
+
+
+            }
+        });
+    }
+    function StatusCheckbox(element) {
+        debugger;
+        if (element.checked) {
+
+            $("#hidEventDate").hide(); $("#hidDescription").hide(); $("#hidEventContact").hide();
+
+        }
+        else {
+            $("#hidEventDate").show(); $("#hidDescription").show(); $("#hidEventContact").show();
+        }
+
+    }
+    $(document).ready(function () {
+        $("#Status").prop("checked", true);
+        $("#hidEventDate").hide(); $("#hidDescription").hide(); $("#hidEventContact").hide();
+    })
+</script>
+
+@*@using (Html.BeginForm())*@
+
+@using (Ajax.BeginForm("Create", "Company", new AjaxOptions { HttpMethod = "POST", LoadingElementId = "spinner", InsertionMode = InsertionMode.Replace, OnSuccess = "OnSuccess(data)", OnFailure = "alert('Something went wrong!')" }, new { id = "CompanyForm", enctype = "multipart/form-data" }))
+{
+
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.Id)
+<div class="form-horizontal">
+    <br />
+    <h4>Company Details</h4>
+
+    @Html.ValidationSummary()
+     <h1 style="color:red">@ViewBag.Message </h1>
+    <div id="exTab2" class="container">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#1" data-toggle="tab" class="nav-link  active">Basic</a>
+            </li>
+            @*<li>
+                    <a href="#2" data-toggle="tab" class="nav-link">Location <i class="fas fa-map-marker-alt"></i></a>
+                </li>*@
+            @*<li>
+                    <a href="#3" data-toggle="tab" class="nav-link">Other</a>
+                </li>*@
+        </ul>
+
+        <div class="tab-content ">
+            <div class="tab-pane active" id="1">
+                @*@Html.HiddenFor(model => model.Id)*@
+
+                <div class="row">
+                    <div class="col">
+                        <label class="control-label"> Company Name</label>
+
+
+                        @Html.EditorFor(model => model.CompanyName, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                        @*@Html.ValidationMessageFor(model => model.CompanyName, "", new { @class = "text-danger" })*@
+                    </div>
+                    
+
+                </div>
+
+                <div class="row">
+                    @*<div class="col">
+                            <label class="control-label">JD Received </label>
+
+                            @Html.EditorFor(model => model.JdReceived, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.JdReceived, "", new { @class = "text-danger" })
+                        </div>*@
+
+                </div>
+
+                @*<div class="row">
+                        <div class="col">
+                            <label class="control-label">Current Recruiter </label>
+
+                            @Html.EditorFor(model => model.CurrentRecruiter, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.CurrentRecruiter, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col">
+                            <label class="control-label">Hired From </label>
+                            @Html.EditorFor(model => model.HiredFrom, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.HiredFrom, "", new { @class = "text-danger" })
+                        </div>
+                    </div>*@
+
+                <div class="row">
+                    <div class="col">
+                        <label class="control-label">Date Given</label>
+                        <input type="text" id="DateGiven" name="DateGiven" required autocomplete="off" value="@Model.DateGiven.ToString("dd MMM yyyy")" class="form-control datepicker" />
+                        @*@Html.EditorFor(model => model.DateGiven, new { htmlAttributes = new { @class = "form-control" } })*@
+                    </div>
+                    <div class="col">
+                        <label class="control-label">MTC/STC</label>
+                        @Html.EditorFor(model => model.MTCorSTC, new { htmlAttributes = new { @class = "form-control" } })
+                        @*@Html.ValidationMessageFor(model => model.MTCorSTC, "", new { @class = "text-danger" })*@
+                    </div>
+                </div>
+
+                <div class="row">
+                    @*<div class="col">
+                            <label class="control-label">Address </label>
+
+                            @Html.EditorFor(model => model.Address1, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+
+                        </div>*@
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label class="control-label">City </label>
+
+                        @Html.DropDownList("City", Model.ddlCity, "select", new { @class = "form-control", @required = "required" })
+                        @*@Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control", @required = "required" } })*@
+                        @*@Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })*@
+                    </div>
+
+                    <div class="col">
+                        <label class="control-label">Alloted To</label>
+                        @Html.EditorFor(model => model.AllotedTo, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                        @Html.ValidationMessageFor(model => model.AllotedTo, "", new { @class = "text-danger" })
+                    </div>
+                    @*<div class="col">
+                            <label class="control-label">Sub Location </label>
+                            @Html.DropDownList("SubLocation", Model.ddlSubLocation, "select", new { @class = "form-control", @required = "required", @id = "CSubLocation" })
+
+
+                        </div>*@
+                </div>
+
+
+
+                @Html.HiddenFor(m => m.CreatedBy)
+                @Html.HiddenFor(m => m.CreatedOn)
+                @Html.HiddenFor(m => m.IsDeleted)
+                <div class="row">
+                    @*<div class="col">
+                            <label class="control-label">Contact Number</label>
+
+                            @Html.EditorFor(model => model.ContactNumber, new { htmlAttributes = new { @class = "form-control", @required = "required", @pattern = "[0-9]{10}", @type = "tel", @maxlength = "10", @minlength = 10 } })
+
+                        </div>*@
+
+                    <div class="col">
+                        <label class="control-label">Remarks</label>
+                        @Html.EditorFor(model => model.Remarks, new { htmlAttributes = new { @class = "form-control" } })
+                        @*   @Html.ValidationMessageFor(model => model.Remarks, "", new { @class = "text-danger" })*@
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <label class="control-label">Hiring Area</label>
+
+                        @Html.DropDownList("HiringArea", Model.ddlCity, "select", new { @class = "form-control" })
+                        @*@Html.EditorFor(model => model.HiringArea, new { htmlAttributes = new { @class = "form-control" } })*@
+                        @* @Html.ValidationMessageFor(model => model.HiringArea, "", new { @class = "text-danger" })*@
+                    </div>
+                    <div class="col">
+                        <label class="control-label">Plant/Reg.Office</label>
+                        @Html.EditorFor(model => model.PlantorRegdOffice, new { htmlAttributes = new { @class = "form-control" } })
+                        @*@Html.ValidationMessageFor(model => model.PlantorRegdOffice, "", new { @class = "text-danger" })*@
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label class="control-label">Transferred From</label>
+
+                        @Html.EditorFor(model => model.TransferredFrom, new { htmlAttributes = new { @class = "form-control" } })
+                        @*  @Html.ValidationMessageFor(model => model.TransferredFrom, "", new { @class = "text-danger" })*@
+                    </div>
+                    <div class="col">
+                        <label class="control-label">Sector</label>
+                        @Html.DropDownListFor(model => model.Sector, Model.ddlSector, "Select", new { @class = "form-control select2", @required = "required" })
+                        @* @Html.ValidationMessageFor(model => model.Sector, "", new { @class = "text-danger" })*@
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col">
+                        <label class="control-label">Research Source</label>
+                        @Html.EditorFor(model => model.ResearchSource, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                        @*@Html.ValidationMessageFor(model => model.ResearchSource, "", new { @class = "text-danger" })*@
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col">
+                        <label class="control-label">Third Party</label>
+                        @Html.EditorFor(model => model.ThirdParty, new { htmlAttributes = new { @class = "form-control" } })
+                        @*@Html.ValidationMessageFor(model => model.ThirdParty, "", new { @class = "text-danger" })*@
+                    </div>
+                    <div class="col">
+                        <label class="control-label">Summer Training</label>
+
+                        @Html.EditorFor(model => model.SummerTraining, new { htmlAttributes = new { @class = "form-control" } })
+                        @* @Html.ValidationMessageFor(model => model.SummerTraining, "", new { @class = "text-danger" })*@
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <label class="control-label">Summary</label>
+                        @Html.TextAreaFor(model => model.Summary, new { htmlAttributes = new { @class = "form-control", @id = "SummaryBox" } })
+                        @*@Html.ValidationMessageFor(model => model.Summary, "", new { @class = "text-danger" })*@
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label class="control-label">Is Active</label>
+                        @Html.EditorFor(model => model.IsActive)
+                        @* @Html.ValidationMessageFor(model => model.IsActive, "", new { @class = "text-danger" })*@
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <div class="tab-pane " id="3">
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <input type="submit" value="Save" class="btn btn-xs btn-success" />
+            @*@Html.ActionLink("Back to List", "CompanyList","",new {@class="btn btn-xs btn-success" })*@
+        </div>
+    </div>
+
+</div>
+}
+
+
+<script>
+    $(document).ready(function () {
+        $('#SummaryBox').summernote({
+            height: 200,                 // set editor height
+            minHeight: null,             // set minimum height of editor
+            maxHeight: null,             // set maximum height of editor
+            // focus: true,
+            toolbar: [
+                // [groupName, [list of button]]
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['strikethrough', 'superscript', 'subscript']],
+                ['fontsize', ['fontsize']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']]
+            ]// set focus to editable area after initializing summernote                // set focus to editable area after initializing summernote
+        });
+
+        $('#jdDescription').summernote({
+            height: 200,                 // set editor height
+            minHeight: null,             // set minimum height of editor
+            maxHeight: null,             // set maximum height of editor
+            // focus: true,
+            toolbar: [
+                // [groupName, [list of button]]
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['strikethrough', 'superscript', 'subscript']],
+                ['fontsize', ['fontsize']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']]
+            ]// set focus to editable area after initializing summernote                // set focus to editable area after initializing summernote
+        });
+    });
+    var Data = $('#Summary').val();
+    $('#Summary').summernote('code', Data);
+
+    $('.select2').select2();
+
+
+
+    function OnSuccess(data) {
+        if (data.Id == 0) {
+            alert("Company Already Exists!")
+        }
+        else {
+            $('#myModal').modal('show');
+        }
+       
+     
+    }
+</script>

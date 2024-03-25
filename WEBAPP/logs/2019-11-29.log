@@ -1,0 +1,498 @@
+2019-11-29 13:30:48.5134 INFO CompanyID-127|CompanyNameDayal Group
+- Contact Details Saved
+2019-11-29 13:30:48.5614 INFO CompanyID-127|CompanyNameDayal Group
+- Contact Details Saved
+2019-11-29 13:30:59.5267 INFO CompanyID-127|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 13:31:12.0120 INFO CompanyID-127|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 13:31:21.1292 INFO CompanyID-127|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 13:31:31.2125 INFO CompanyID-127|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 13:31:41.5211 INFO CompanyID-127|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 13:31:47.5016 ERROR CompanyID-127|CompanyNameDayal Group
+- call Notes Failed ExString was not recognized as a valid DateTime.
+2019-11-29 19:19:20.8469 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-11-29 19:19:20.9129 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-11-29 19:19:20.9279 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-11-29 19:19:20.9419 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-11-29 19:19:20.9580 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-11-29 19:19:20.9730 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-11-29 19:19:20.9880 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-11-29 19:19:21.0030 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-11-29 19:19:21.0180 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-11-29 19:19:21.0330 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-11-29 19:19:21.0480 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-11-29 19:19:21.0630 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-11-29 19:19:21.0770 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-11-29 19:19:21.0930 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-11-29 19:19:21.1070 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-11-29 19:19:21.1230 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-11-29 19:19:21.1370 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-11-29 19:19:21.1530 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-11-29 19:19:21.1670 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-11-29 19:19:21.1670 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-11-29 19:19:21.1950 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-11-29 19:19:21.2090 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-11-29 19:19:21.2250 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-11-29 19:19:21.2400 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-11-29 19:19:21.2681 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-11-29 19:19:21.2831 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-11-29 19:19:21.3061 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-11-29 19:19:21.3211 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-11-29 19:19:21.3371 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-11-29 19:19:21.3511 ERROR CompanyID-128|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-11-29 19:19:21.3541 INFO CompanyID-128|CompanyName-Saved
+2019-11-29 19:19:21.6052 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-11-29 19:19:21.6205 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-11-29 19:19:21.6355 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-11-29 19:19:21.6355 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-11-29 19:19:21.6655 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-11-29 19:19:21.6805 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-11-29 19:19:21.6945 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-11-29 19:19:21.7105 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-11-29 19:19:21.7265 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-11-29 19:19:21.7455 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-11-29 19:19:21.7615 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-11-29 19:19:21.7775 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-11-29 19:19:21.7925 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-11-29 19:19:21.8075 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-11-29 19:19:21.8075 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-11-29 19:19:21.8345 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-11-29 19:19:21.8485 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-11-29 19:19:21.8635 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-11-29 19:19:21.8776 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-11-29 19:19:21.8925 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-11-29 19:19:21.9072 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-11-29 19:19:21.9232 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-11-29 19:19:21.9382 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-11-29 19:19:21.9522 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-11-29 19:19:21.9662 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-11-29 19:19:21.9812 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-11-29 19:19:21.9950 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-11-29 19:19:21.9950 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-11-29 19:19:22.0241 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-11-29 19:19:22.0391 ERROR CompanyID-129|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-11-29 19:19:22.0391 INFO CompanyID-129|CompanyName-Saved
+2019-11-29 19:20:14.8855 INFO CompanyID-130|CompanyNameDayal Group
+- Contact Details Saved
+2019-11-29 19:20:14.8855 INFO CompanyID-130|CompanyNameDayal Group
+- Contact Details Saved
+2019-11-29 19:20:16.0511 INFO CompanyID-130|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:20:17.4268 INFO CompanyID-130|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:20:20.9626 INFO CompanyID-130|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:20:20.9666 INFO CompanyID-130|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:20:20.9666 INFO CompanyID-130|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:20:21.0198 ERROR CompanyID-130|CompanyNameDayal Group
+- call Notes Failed ExString was not recognized as a valid DateTime.
+2019-11-29 19:20:21.0428 INFO CompanyID-130|CompanyNameDayal Group
+- Company Addrres Saved
+2019-11-29 19:20:21.0428 INFO CompanyID-130|CompanyNameDayal Group
+- Company Addrres Saved
+2019-11-29 19:20:22.2793 INFO CompanyID-130|CompanyNameDayal Group
+- CompanyStream Saved
+2019-11-29 19:20:22.3539 INFO CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:20:22.3539 INFO CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:20:22.3539 INFO CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:20:22.3539 INFO CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:20:22.3539 INFO CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:20:22.3539 INFO CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:20:22.3539 INFO CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:20:22.3539 INFO CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:20:22.3539 INFO CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:20:22.3689 INFO CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:20:22.3689 INFO CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:20:22.3689 INFO CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:20:22.4069 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-11-29 19:20:22.4289 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-11-29 19:20:22.4509 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-11-29 19:20:22.4699 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-11-29 19:20:22.4919 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-11-29 19:20:22.5119 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-11-29 19:20:22.5309 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-11-29 19:20:22.5509 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-11-29 19:20:22.5702 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-11-29 19:20:22.5902 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-11-29 19:20:22.6102 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-11-29 19:20:22.6322 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-11-29 19:20:22.6532 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-11-29 19:20:22.6722 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-11-29 19:20:22.6922 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-11-29 19:20:22.7112 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-11-29 19:20:22.7327 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-11-29 19:20:22.7547 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-11-29 19:20:22.7747 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-11-29 19:20:22.7997 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-11-29 19:20:22.8217 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-11-29 19:20:22.8427 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-11-29 19:20:22.8606 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-11-29 19:20:22.8806 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-11-29 19:20:22.8997 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-11-29 19:20:22.9197 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-11-29 19:20:22.9387 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-11-29 19:20:22.9587 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-11-29 19:20:22.9857 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-11-29 19:20:23.0107 ERROR CompanyID-130|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-11-29 19:20:23.0107 INFO CompanyID-130|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:20:23.0107 INFO CompanyID-130|CompanyNameDayal Group
+-Saved
+2019-11-29 19:20:23.3287 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-11-29 19:20:23.3487 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-11-29 19:20:23.3687 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-11-29 19:20:23.3887 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-11-29 19:20:23.4107 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-11-29 19:20:23.4327 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-11-29 19:20:23.4547 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-11-29 19:20:23.4747 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-11-29 19:20:23.4947 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-11-29 19:20:23.5147 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-11-29 19:20:23.5347 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-11-29 19:20:23.5537 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-11-29 19:20:23.5727 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-11-29 19:20:23.5927 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-11-29 19:20:23.6127 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-11-29 19:20:23.6347 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-11-29 19:20:23.6547 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-11-29 19:20:23.6747 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-11-29 19:20:23.6937 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-11-29 19:20:23.7133 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-11-29 19:20:23.7333 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-11-29 19:20:23.7523 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-11-29 19:20:23.7724 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-11-29 19:20:23.7924 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-11-29 19:20:23.8134 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-11-29 19:20:23.8354 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-11-29 19:20:23.8544 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-11-29 19:20:23.8734 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-11-29 19:20:23.8934 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-11-29 19:20:23.9135 ERROR CompanyID-131|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-11-29 19:20:23.9135 INFO CompanyID-131|CompanyName-Saved
+2019-11-29 19:20:24.2191 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-11-29 19:20:24.2431 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-11-29 19:20:24.2701 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-11-29 19:20:24.2911 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-11-29 19:20:24.3141 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-11-29 19:20:24.3361 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-11-29 19:20:24.3571 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-11-29 19:20:24.3771 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-11-29 19:20:24.3971 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-11-29 19:20:24.4171 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-11-29 19:20:24.4421 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-11-29 19:20:24.4651 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-11-29 19:20:24.4841 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-11-29 19:20:24.5041 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-11-29 19:20:24.5241 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-11-29 19:20:24.5451 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-11-29 19:20:24.5661 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-11-29 19:20:24.5861 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-11-29 19:20:24.6061 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-11-29 19:20:24.6266 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-11-29 19:20:24.6496 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-11-29 19:20:24.6696 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-11-29 19:20:24.6886 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-11-29 19:20:24.7086 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-11-29 19:20:24.7276 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-11-29 19:20:24.7476 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-11-29 19:20:24.7671 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-11-29 19:20:24.7881 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-11-29 19:20:24.8081 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-11-29 19:20:24.8276 ERROR CompanyID-132|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-11-29 19:20:24.8276 INFO CompanyID-132|CompanyName-Saved
+2019-11-29 19:22:14.9117 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-11-29 19:22:14.9367 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-11-29 19:22:14.9567 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-11-29 19:22:14.9777 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-11-29 19:22:14.9967 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-11-29 19:22:15.0167 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-11-29 19:22:15.0372 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-11-29 19:22:15.0572 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-11-29 19:22:15.0800 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-11-29 19:22:15.1010 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-11-29 19:22:15.1220 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-11-29 19:22:15.1414 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-11-29 19:22:15.1612 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-11-29 19:22:15.1811 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-11-29 19:22:15.2011 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-11-29 19:22:15.2211 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-11-29 19:22:15.2401 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-11-29 19:22:15.2601 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-11-29 19:22:15.2841 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-11-29 19:22:15.3082 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-11-29 19:22:15.3272 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-11-29 19:22:15.3472 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-11-29 19:22:15.3702 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-11-29 19:22:15.3912 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-11-29 19:22:15.4122 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-11-29 19:22:15.4322 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-11-29 19:22:15.4522 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-11-29 19:22:15.4712 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-11-29 19:22:15.4922 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-11-29 19:22:15.5162 ERROR CompanyID-133|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-11-29 19:22:15.5162 INFO CompanyID-133|CompanyName-Saved
+2019-11-29 19:22:48.9639 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-11-29 19:22:48.9889 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-11-29 19:22:49.0128 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-11-29 19:22:49.0358 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-11-29 19:22:49.0580 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-11-29 19:22:49.0810 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-11-29 19:22:49.1040 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-11-29 19:22:49.1270 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-11-29 19:22:49.1480 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-11-29 19:22:49.1680 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-11-29 19:22:49.1870 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-11-29 19:22:49.2070 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-11-29 19:22:49.2260 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-11-29 19:22:49.2460 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-11-29 19:22:49.2650 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-11-29 19:22:49.2870 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-11-29 19:22:49.3160 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-11-29 19:22:49.3540 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-11-29 19:22:49.3810 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-11-29 19:22:49.4160 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-11-29 19:22:49.4490 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-11-29 19:22:49.4700 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-11-29 19:22:49.4900 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-11-29 19:22:49.5120 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-11-29 19:22:49.5330 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-11-29 19:22:49.5530 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-11-29 19:22:49.5720 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-11-29 19:22:49.5920 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-11-29 19:22:49.6120 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-11-29 19:22:49.6330 ERROR CompanyID-134|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-11-29 19:22:49.6330 INFO CompanyID-134|CompanyName-Saved
+2019-11-29 19:23:17.1033 INFO CompanyID-135|CompanyNameDayal Group
+- Contact Details Saved
+2019-11-29 19:23:17.1033 INFO CompanyID-135|CompanyNameDayal Group
+- Contact Details Saved
+2019-11-29 19:23:17.1033 INFO CompanyID-135|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:23:17.1033 INFO CompanyID-135|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:23:17.1033 INFO CompanyID-135|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:23:17.1222 INFO CompanyID-135|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:23:17.1222 INFO CompanyID-135|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:23:17.1502 ERROR CompanyID-135|CompanyNameDayal Group
+- call Notes Failed ExString was not recognized as a valid DateTime.
+2019-11-29 19:23:45.4332 INFO CompanyID-135|CompanyNameDayal Group
+- Company Addrres Saved
+2019-11-29 19:23:54.9291 INFO CompanyID-135|CompanyNameDayal Group
+- Company Addrres Saved
+2019-11-29 19:23:59.5343 INFO CompanyID-135|CompanyNameDayal Group
+- CompanyStream Saved
+2019-11-29 19:23:59.5547 INFO CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:23:59.5566 INFO CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:23:59.5566 INFO CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:23:59.5566 INFO CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:23:59.5566 INFO CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:23:59.5566 INFO CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:23:59.5566 INFO CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:23:59.5566 INFO CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:23:59.5566 INFO CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:23:59.5566 INFO CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:23:59.5566 INFO CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:23:59.5726 INFO CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Saved
+2019-11-29 19:23:59.5966 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-11-29 19:23:59.6176 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-11-29 19:23:59.6376 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-11-29 19:23:59.6576 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-11-29 19:23:59.6776 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-11-29 19:23:59.6976 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-11-29 19:23:59.7176 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-11-29 19:23:59.7386 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-11-29 19:23:59.7596 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-11-29 19:23:59.7786 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-11-29 19:23:59.8006 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-11-29 19:23:59.8196 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-11-29 19:23:59.8396 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-11-29 19:23:59.8596 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-11-29 19:23:59.8806 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-11-29 19:23:59.9016 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-11-29 19:23:59.9239 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-11-29 19:23:59.9529 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-11-29 19:23:59.9869 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-11-29 19:24:00.0199 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-11-29 19:24:00.0409 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-11-29 19:24:00.0619 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-11-29 19:24:00.0819 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-11-29 19:24:00.1009 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-11-29 19:24:00.1215 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-11-29 19:24:00.1425 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-11-29 19:24:00.1635 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-11-29 19:24:00.1845 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-11-29 19:24:00.2055 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-11-29 19:24:00.2275 ERROR CompanyID-135|CompanyNameDayal Group
+- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-11-29 19:24:00.2335 INFO CompanyID-135|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:24:00.2335 INFO CompanyID-135|CompanyNameDayal Group
+-Saved
+2019-11-29 19:24:01.9986 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-11-29 19:24:02.0396 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-11-29 19:24:02.0656 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-11-29 19:24:02.0866 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-11-29 19:24:02.1106 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-11-29 19:24:02.1326 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-11-29 19:24:02.1576 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-11-29 19:24:02.1796 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-11-29 19:24:02.1996 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-11-29 19:24:02.2196 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-11-29 19:24:02.2446 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-11-29 19:24:02.2716 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-11-29 19:24:02.3066 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-11-29 19:24:02.3346 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-11-29 19:24:02.3646 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-11-29 19:24:02.3936 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-11-29 19:24:02.4316 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-11-29 19:24:02.4546 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-11-29 19:24:02.4776 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-11-29 19:24:02.4996 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-11-29 19:24:02.5206 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-11-29 19:24:02.5396 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-11-29 19:24:02.5597 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-11-29 19:24:02.5818 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-11-29 19:24:02.6018 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-11-29 19:24:02.6218 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-11-29 19:24:02.6418 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-11-29 19:24:02.6648 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-11-29 19:24:02.6878 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-11-29 19:24:02.7068 ERROR CompanyID-136|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-11-29 19:24:02.7068 INFO CompanyID-136|CompanyName-Saved
+2019-11-29 19:24:04.5885 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-11-29 19:24:04.6115 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-11-29 19:24:04.6325 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-11-29 19:24:04.6535 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-11-29 19:24:04.6735 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-11-29 19:24:04.6945 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-11-29 19:24:04.7155 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-11-29 19:24:04.7355 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-11-29 19:24:04.7555 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-11-29 19:24:04.7845 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-11-29 19:24:04.8115 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-11-29 19:24:04.8345 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-11-29 19:24:04.8535 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-11-29 19:24:04.8735 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-11-29 19:24:04.8925 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-11-29 19:24:04.9125 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-11-29 19:24:04.9335 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-11-29 19:24:04.9555 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-11-29 19:24:04.9785 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-11-29 19:24:04.9995 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-11-29 19:24:05.0195 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-11-29 19:24:05.0396 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-11-29 19:24:05.0595 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-11-29 19:24:05.0816 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-11-29 19:24:05.1056 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-11-29 19:24:05.1256 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-11-29 19:24:05.1456 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-11-29 19:24:05.1656 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-11-29 19:24:05.1866 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-11-29 19:24:05.2086 ERROR CompanyID-137|CompanyName- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-11-29 19:24:05.2086 INFO CompanyID-137|CompanyName-Saved
+2019-11-29 19:27:26.7316 INFO CompanyID-138|CompanyNameDayal Group
+- Contact Details Saved
+2019-11-29 19:27:26.7316 INFO CompanyID-138|CompanyNameDayal Group
+- Contact Details Saved
+2019-11-29 19:29:03.4745 INFO CompanyID-138|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:29:08.5964 INFO CompanyID-138|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:29:13.4650 INFO CompanyID-138|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:29:17.2382 INFO CompanyID-138|CompanyNameDayal Group
+- Call Notes Saved
+2019-11-29 19:29:23.2894 INFO CompanyID-138|CompanyNameDayal Group
+- Call Notes Saved

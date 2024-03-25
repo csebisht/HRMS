@@ -1,0 +1,404 @@
+2020-06-19 12:07:23.5752 ERROR SPWrapper SaveCompany Ex - Cannot insert the value NULL into column 'Id', table 'MDF.dbo.CompanyMaster'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+2020-06-19 12:07:23.7152 ERROR CompanyNameAstra Zeneca Pharma Industries Ltd- Basic Failed ExCannot insert the value NULL into column 'Id', table 'MDF.dbo.CompanyMaster'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+2020-06-19 12:11:44.6474 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2020-06-19 12:14:49.0074 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2020-06-19 12:14:49.0764 ERROR CompanyNameAstra Zeneca Pharma Industries Ltd- Basic Failed ExExecution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2020-06-19 12:15:25.0161 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2020-06-19 12:21:43.1187 ERROR SPWrapper SaveUser Ex - Cannot insert the value NULL into column 'Id', table 'MDF.dbo.JobDescription'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+2020-06-19 12:21:43.3540 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- PR Details Failed ExCannot insert the value NULL into column 'Id', table 'MDF.dbo.JobDescription'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+2020-06-19 12:21:43.4550 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:21:43.4640 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:21:43.4640 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:21:43.5640 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.5850 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.6130 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.6540 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.6900 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.7100 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.7550 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.7760 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.8240 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.8410 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.8830 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.9250 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.9370 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.9750 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:43.9900 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.0466 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.0675 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.0745 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.0965 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.1355 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.1355 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.1536 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.1648 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.1648 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.1823 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.1823 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.2080 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.2250 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.2470 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.2470 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.2750 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.2900 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.3110 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.3210 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:44.3570 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Company Addrres Saved
+2020-06-19 12:21:48.4670 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- CompanyStream Saved
+2020-06-19 12:21:48.4890 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- CompanyStream Saved
+2020-06-19 12:21:48.6050 ERROR SPWrapper SaveExtraCallNotes Ex - Cannot insert the value NULL into column 'Id', table 'MDF.dbo.ExtraCallNotes'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+2020-06-19 12:21:48.6370 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXCannot insert the value NULL into column 'Id', table 'MDF.dbo.ExtraCallNotes'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+2020-06-19 12:21:48.8156 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2020-06-19 12:21:48.8526 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2020-06-19 12:21:48.8826 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2020-06-19 12:21:48.9096 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2020-06-19 12:21:48.9406 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2020-06-19 12:21:48.9686 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2020-06-19 12:21:49.0016 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2020-06-19 12:21:49.0376 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2020-06-19 12:21:49.0786 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2020-06-19 12:21:49.1056 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2020-06-19 12:21:49.1366 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2020-06-19 12:21:49.1748 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2020-06-19 12:21:49.2456 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2020-06-19 12:21:49.2882 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2020-06-19 12:21:49.3192 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2020-06-19 12:21:49.3592 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2020-06-19 12:21:49.3872 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2020-06-19 12:21:49.4172 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2020-06-19 12:21:49.4552 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2020-06-19 12:21:49.4922 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2020-06-19 12:21:49.5232 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2020-06-19 12:21:49.5522 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2020-06-19 12:21:49.5802 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2020-06-19 12:21:49.6222 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2020-06-19 12:21:49.6812 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2020-06-19 12:21:49.7382 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2020-06-19 12:21:49.7692 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2020-06-19 12:21:49.8012 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2020-06-19 12:21:49.8342 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2020-06-19 12:21:49.8862 ERROR CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2020-06-19 12:21:49.9875 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:21:49.9875 INFO CompanyID-22621|CompanyNameAstra Zeneca Pharma Industries Ltd-Saved
+2020-06-19 12:23:29.5221 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- PR Details Saved
+2020-06-19 12:23:29.5221 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- PR Details Saved
+2020-06-19 12:23:29.5251 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- PR Details Saved
+2020-06-19 12:23:29.5251 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:23:29.5251 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:23:29.5251 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:23:29.5251 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.5471 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.5471 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.5601 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.5601 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.5731 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.5731 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.5731 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.5931 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.5931 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6051 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6051 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6181 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6181 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6181 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6371 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6371 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6511 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6511 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6511 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6721 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6801 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6801 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6801 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6991 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.6991 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.7141 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.7141 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.7271 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.7271 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.7441 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.7441 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.7601 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.7601 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:29.7601 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Company Addrres Saved
+2020-06-19 12:23:29.7801 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- CompanyStream Saved
+2020-06-19 12:23:29.7801 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- CompanyStream Saved
+2020-06-19 12:23:29.7801 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Saved
+2020-06-19 12:23:29.7911 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Saved
+2020-06-19 12:23:29.8361 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2020-06-19 12:23:29.8801 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2020-06-19 12:23:29.9261 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2020-06-19 12:23:29.9771 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2020-06-19 12:23:30.0251 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2020-06-19 12:23:30.0681 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2020-06-19 12:23:30.1131 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2020-06-19 12:23:30.1631 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2020-06-19 12:23:30.2111 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2020-06-19 12:23:30.2551 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2020-06-19 12:23:30.2991 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2020-06-19 12:23:30.3441 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2020-06-19 12:23:30.3961 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2020-06-19 12:23:30.4441 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2020-06-19 12:23:30.4901 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2020-06-19 12:23:30.5351 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2020-06-19 12:23:30.5841 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2020-06-19 12:23:30.6291 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2020-06-19 12:23:30.6751 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2020-06-19 12:23:30.7208 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2020-06-19 12:23:30.7699 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2020-06-19 12:23:30.8176 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2020-06-19 12:23:30.8786 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2020-06-19 12:23:30.9286 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2020-06-19 12:23:30.9806 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2020-06-19 12:23:31.0586 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2020-06-19 12:23:31.1146 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2020-06-19 12:23:31.1766 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2020-06-19 12:23:31.2466 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2020-06-19 12:23:31.2986 ERROR CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2020-06-19 12:23:31.3086 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:23:31.3086 INFO CompanyID-22622|CompanyNameAstra Zeneca Pharma Industries Ltd-Saved
+2020-06-19 12:25:46.1509 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- PR Details Saved
+2020-06-19 12:25:46.1509 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- PR Details Saved
+2020-06-19 12:25:46.1509 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- PR Details Saved
+2020-06-19 12:25:46.1509 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:25:46.1509 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:25:46.2049 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:26:47.8848 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0039 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0109 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0109 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0279 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0279 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0419 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0419 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0559 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0559 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0559 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0759 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0759 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0919 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.0919 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1049 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1049 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1189 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1189 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1189 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1379 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1379 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1509 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1509 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1509 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1699 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1699 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1829 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1829 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1959 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.1959 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.2129 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.2129 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:06.2279 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:12.0074 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Company Addrres Saved
+2020-06-19 12:27:12.7121 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- CompanyStream Saved
+2020-06-19 12:27:12.7381 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- CompanyStream Saved
+2020-06-19 12:27:13.3936 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Saved
+2020-06-19 12:27:13.3936 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Saved
+2020-06-19 12:27:13.4472 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2020-06-19 12:27:13.4942 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2020-06-19 12:27:13.5402 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2020-06-19 12:27:13.5845 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2020-06-19 12:27:13.6385 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2020-06-19 12:27:13.6865 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2020-06-19 12:27:13.7305 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2020-06-19 12:27:13.7745 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2020-06-19 12:27:13.8215 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2020-06-19 12:27:13.8695 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2020-06-19 12:27:13.9175 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2020-06-19 12:27:13.9675 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2020-06-19 12:27:14.0175 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2020-06-19 12:27:14.0655 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2020-06-19 12:27:14.1095 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2020-06-19 12:27:14.1535 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2020-06-19 12:27:14.1975 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2020-06-19 12:27:14.2445 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2020-06-19 12:27:14.2895 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2020-06-19 12:27:14.3355 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2020-06-19 12:27:14.3815 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2020-06-19 12:27:14.5475 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2020-06-19 12:27:14.6235 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2020-06-19 12:27:14.6845 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2020-06-19 12:27:14.7435 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2020-06-19 12:27:14.8045 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2020-06-19 12:27:14.8505 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2020-06-19 12:27:14.8945 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2020-06-19 12:27:14.9435 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2020-06-19 12:27:14.9945 ERROR CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2020-06-19 12:27:19.2349 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:27:19.8614 INFO CompanyID-22623|CompanyNameAstra Zeneca Pharma Industries Ltd-Saved
+2020-06-19 12:28:36.5825 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- PR Details Saved
+2020-06-19 12:28:36.5825 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- PR Details Saved
+2020-06-19 12:28:36.5875 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- PR Details Saved
+2020-06-19 12:28:36.5875 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:28:36.5875 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:28:36.5875 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:28:44.3925 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.4125 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.4205 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.4205 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.4345 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.4345 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.4515 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.4515 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.4645 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.4645 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.4785 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.4785 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.4955 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.4955 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.5115 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.5115 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.5295 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.5295 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.5445 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.5445 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.5585 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.5585 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.5715 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.5715 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.5875 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.5875 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.6065 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.6065 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.6235 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.6235 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.6385 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:28:44.6385 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:02.5256 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:02.5256 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:02.5256 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Company Addrres Saved
+2020-06-19 12:30:02.5436 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- CompanyStream Saved
+2020-06-19 12:30:02.5436 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- CompanyStream Saved
+2020-06-19 12:30:02.5436 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Saved
+2020-06-19 12:30:02.5556 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Saved
+2020-06-19 12:30:02.5996 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2020-06-19 12:30:02.6416 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2020-06-19 12:30:02.6876 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2020-06-19 12:30:02.7356 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2020-06-19 12:30:02.7796 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2020-06-19 12:30:02.8226 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2020-06-19 12:30:02.8656 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2020-06-19 12:30:02.9146 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2020-06-19 12:30:02.9696 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2020-06-19 12:30:03.0156 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2020-06-19 12:30:03.0586 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2020-06-19 12:30:03.1056 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2020-06-19 12:30:03.1525 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2020-06-19 12:30:03.1995 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2020-06-19 12:30:03.2515 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2020-06-19 12:30:03.3005 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2020-06-19 12:30:03.3435 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2020-06-19 12:30:03.3865 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2020-06-19 12:30:03.4305 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2020-06-19 12:30:03.4735 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2020-06-19 12:30:03.5985 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2020-06-19 12:30:03.6685 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2020-06-19 12:30:03.7365 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2020-06-19 12:30:03.7915 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2020-06-19 12:30:03.8425 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2020-06-19 12:30:03.9045 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2020-06-19 12:30:03.9535 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2020-06-19 12:30:03.9985 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2020-06-19 12:30:04.0465 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2020-06-19 12:30:04.0925 ERROR CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2020-06-19 12:30:04.0925 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:04.0925 INFO CompanyID-22624|CompanyNameAstra Zeneca Pharma Industries Ltd-Saved
+2020-06-19 12:30:35.5843 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- PR Details Saved
+2020-06-19 12:30:35.5863 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- PR Details Saved
+2020-06-19 12:30:35.5863 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- PR Details Saved
+2020-06-19 12:30:35.5863 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:30:35.5863 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:30:35.5863 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Contact Details Saved
+2020-06-19 12:30:40.0026 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.0216 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.0306 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.0306 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.0446 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.0446 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.0626 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.0626 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.0796 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.0866 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.0866 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.0866 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1096 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1176 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1176 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1176 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1376 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1376 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1516 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1516 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1666 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1666 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1816 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1816 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1966 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.1966 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.2126 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.2126 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.2306 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.2426 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.2426 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.2586 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.2586 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.2776 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.2776 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.2936 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:40.2936 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Company Addrres Saved
+2020-06-19 12:30:40.2936 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- CompanyStream Saved
+2020-06-19 12:30:40.3146 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- CompanyStream Saved
+2020-06-19 12:30:40.3146 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Saved
+2020-06-19 12:30:40.3146 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Saved
+2020-06-19 12:30:40.3756 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2020-06-19 12:30:40.4306 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2020-06-19 12:30:40.4816 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2020-06-19 12:30:40.5306 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2020-06-19 12:30:40.5753 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2020-06-19 12:30:40.6193 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2020-06-19 12:30:40.6663 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2020-06-19 12:30:40.7113 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2020-06-19 12:30:40.7573 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2020-06-19 12:30:40.8013 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2020-06-19 12:30:40.8493 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2020-06-19 12:30:40.8943 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2020-06-19 12:30:40.9433 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2020-06-19 12:30:41.0303 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2020-06-19 12:30:41.1253 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2020-06-19 12:30:41.2093 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2020-06-19 12:30:41.2663 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2020-06-19 12:30:41.3253 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2020-06-19 12:30:41.3813 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2020-06-19 12:30:41.4373 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2020-06-19 12:30:41.4833 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2020-06-19 12:30:41.5293 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2020-06-19 12:30:41.5773 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2020-06-19 12:30:41.6213 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2020-06-19 12:30:41.6653 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2020-06-19 12:30:41.7128 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2020-06-19 12:30:41.7608 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2020-06-19 12:30:41.8068 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2020-06-19 12:30:41.8518 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2020-06-19 12:30:41.8958 ERROR CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2020-06-19 12:30:41.9028 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd- Call Notes Saved
+2020-06-19 12:30:41.9028 INFO CompanyID-22625|CompanyNameAstra Zeneca Pharma Industries Ltd-Saved
+2020-06-19 16:46:06.5552 ERROR SPWrapper GetCourseList Ex - A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.)
+2020-06-19 16:56:22.6610 ERROR SPWrapper GetCallNotes Ex - A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The network path was not found.)
+2020-06-19 16:56:57.4130 ERROR SPWrapper GetCourseList Ex - A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2020-06-19 18:16:45.3981 ERROR SPWrapper GetCallNotes Ex - A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.)
+2020-06-19 18:16:45.3981 ERROR SPWrapper GetCallNotes Ex - A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.)
+2020-06-19 18:16:45.3981 ERROR SPWrapper GetCallNotes Ex - A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.)

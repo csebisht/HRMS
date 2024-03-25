@@ -1,0 +1,10 @@
+2021-02-01 14:43:26.1350 ERROR SPWrapper updatestatus Ex - Incorrect syntax near 'ID'.
+2021-02-01 14:44:47.6515 ERROR SPWrapper updatestatus Ex - Incorrect syntax near 'ID'.
+2021-02-01 14:44:54.9997 ERROR SPWrapper updatestatus Ex - Incorrect syntax near 'ID'.
+2021-02-01 14:45:27.3727 ERROR SPWrapper updatestatus Ex - Incorrect syntax near 'ID'.
+2021-02-01 14:46:26.0109 ERROR SPWrapper updatestatus Ex - Incorrect syntax near 'ID'.
+2021-02-01 15:01:29.4624 ERROR SPWrapper updatestatus Ex - Invalid column name 'True'.
+2021-02-01 15:02:44.8190 ERROR SPWrapper updatestatus Ex - Invalid column name 'True'.
+2021-02-01 15:02:52.7393 ERROR SPWrapper updatestatus Ex - Invalid column name 'True'.
+2021-02-01 15:08:45.9717 ERROR SPWrapper updatestatus Ex - Invalid column name 'False'.
+2021-02-01 15:08:52.1623 ERROR SPWrapper updatestatus Ex - Invalid column name 'False'.

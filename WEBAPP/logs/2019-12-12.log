@@ -1,0 +1,513 @@
+2019-12-12 10:27:43.2205 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:27:43.3285 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:27:43.3795 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:27:43.3795 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:27:45.4862 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:27:45.4862 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:27:45.4862 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:27:45.4862 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:27:45.4992 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:27:45.4992 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:27:48.0810 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Company Addrres Saved
+2019-12-12 10:27:52.9985 ERROR SPWrapper SaveCourse Ex - The error description is 'An invalid character was found in text content.'.
+The error description is 'An invalid character was found in text content.'.
+Could not find prepared statement with handle 0.
+The XML parse error 0xc00ce508 occurred on line number 1, near the XML text "<NewDataSet><CompanyStream><Course>BSc".
+The statement has been terminated.
+2019-12-12 10:27:53.0388 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Failed EXThe error description is 'An invalid character was found in text content.'.
+The error description is 'An invalid character was found in text content.'.
+Could not find prepared statement with handle 0.
+The XML parse error 0xc00ce508 occurred on line number 1, near the XML text "<NewDataSet><CompanyStream><Course>BSc".
+The statement has been terminated.
+2019-12-12 10:27:53.0440 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:27:53.0440 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:27:53.0785 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.0785 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.0785 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.0785 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.0785 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.0785 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.0785 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.0785 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.0785 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.0904 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.0904 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.0904 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.1054 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.1054 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.1054 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.1054 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.1054 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.1054 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.1054 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:27:53.1648 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-12-12 10:27:53.1898 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-12-12 10:27:53.2128 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-12-12 10:27:53.2328 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-12-12 10:27:53.2538 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-12-12 10:27:53.2758 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-12-12 10:27:53.2958 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-12-12 10:27:53.3148 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-12-12 10:27:53.3358 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-12-12 10:27:53.3558 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-12-12 10:27:53.3758 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-12-12 10:27:53.3968 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-12-12 10:27:53.4208 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-12-12 10:27:53.4448 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-12-12 10:27:53.4678 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-12-12 10:27:53.4878 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-12-12 10:27:53.5058 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-12-12 10:27:53.5248 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-12-12 10:27:53.5418 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-12-12 10:27:53.5589 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-12-12 10:27:53.5779 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-12-12 10:27:53.5989 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-12-12 10:27:53.6169 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-12-12 10:27:53.6349 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-12-12 10:27:53.6539 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-12-12 10:27:53.6719 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-12-12 10:27:53.6919 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-12-12 10:27:53.7109 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-12-12 10:27:53.7329 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-12-12 10:27:53.7549 ERROR CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-12-12 10:27:53.7549 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:27:53.7549 INFO CompanyID-1154|CompanyNameKIMIA BIOSCIENCES  LTD-Saved
+2019-12-12 10:29:32.5882 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:29:32.5902 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:29:32.5902 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:29:32.5902 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:29:33.3140 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:29:33.3140 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:29:33.3140 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:29:33.3140 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:29:33.3250 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:29:33.3250 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:29:34.9545 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Company Addrres Saved
+2019-12-12 10:29:35.9421 ERROR SPWrapper SaveCourse Ex - The error description is 'An invalid character was found in text content.'.
+The error description is 'An invalid character was found in text content.'.
+Could not find prepared statement with handle 0.
+The XML parse error 0xc00ce508 occurred on line number 1, near the XML text "<NewDataSet><CompanyStream><Course>BSc".
+The statement has been terminated.
+2019-12-12 10:29:35.9641 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Failed EXThe error description is 'An invalid character was found in text content.'.
+The error description is 'An invalid character was found in text content.'.
+Could not find prepared statement with handle 0.
+The XML parse error 0xc00ce508 occurred on line number 1, near the XML text "<NewDataSet><CompanyStream><Course>BSc".
+The statement has been terminated.
+2019-12-12 10:29:35.9671 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:29:35.9671 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:29:35.9671 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9671 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9671 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9671 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9671 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9671 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9671 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9821 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9821 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9821 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9821 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9821 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9821 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9821 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9821 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:35.9821 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:36.0165 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:36.0165 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:36.0165 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:29:36.0365 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-12-12 10:29:36.0525 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-12-12 10:29:36.0709 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-12-12 10:29:36.0969 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-12-12 10:29:36.1159 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-12-12 10:29:36.1379 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-12-12 10:29:36.1599 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-12-12 10:29:36.1789 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-12-12 10:29:36.1959 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-12-12 10:29:36.2139 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-12-12 10:29:36.2309 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-12-12 10:29:36.2479 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-12-12 10:29:36.2659 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-12-12 10:29:36.2830 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-12-12 10:29:36.3025 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-12-12 10:29:36.3195 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-12-12 10:29:36.3385 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-12-12 10:29:36.3575 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-12-12 10:29:36.3755 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-12-12 10:29:36.3925 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-12-12 10:29:36.4115 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-12-12 10:29:36.4290 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-12-12 10:29:36.4470 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-12-12 10:29:36.4640 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-12-12 10:29:36.4820 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-12-12 10:29:36.4983 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-12-12 10:29:36.5163 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-12-12 10:29:36.5363 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-12-12 10:29:36.5543 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-12-12 10:29:36.5723 ERROR CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-12-12 10:29:36.5743 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:29:36.5743 INFO CompanyID-1155|CompanyNameKIMIA BIOSCIENCES  LTD-Saved
+2019-12-12 10:32:06.1290 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:32:06.1290 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:32:06.1460 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:32:06.1460 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:32:07.4675 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:32:07.4675 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:32:07.4675 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:32:07.4675 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:32:07.4675 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:32:07.4815 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:32:10.0028 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Company Addrres Saved
+2019-12-12 10:32:10.9102 ERROR SPWrapper SaveCourse Ex - The error description is 'An invalid character was found in text content.'.
+The error description is 'An invalid character was found in text content.'.
+Could not find prepared statement with handle 0.
+The XML parse error 0xc00ce508 occurred on line number 1, near the XML text "<NewDataSet><CompanyStream><Course>BSc".
+The statement has been terminated.
+2019-12-12 10:32:10.9262 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Failed EXThe error description is 'An invalid character was found in text content.'.
+The error description is 'An invalid character was found in text content.'.
+Could not find prepared statement with handle 0.
+The XML parse error 0xc00ce508 occurred on line number 1, near the XML text "<NewDataSet><CompanyStream><Course>BSc".
+The statement has been terminated.
+2019-12-12 10:32:10.9262 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:32:10.9262 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:32:10.9262 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9262 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9352 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9352 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9352 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9352 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9352 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9352 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9352 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9352 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9352 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9502 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9502 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9502 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9502 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9502 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9502 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9502 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9502 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:32:10.9762 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-12-12 10:32:10.9902 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-12-12 10:32:11.0032 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-12-12 10:32:11.0173 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-12-12 10:32:11.0307 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-12-12 10:32:11.0437 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-12-12 10:32:11.0437 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-12-12 10:32:11.0708 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-12-12 10:32:11.0858 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-12-12 10:32:11.0998 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-12-12 10:32:11.1148 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-12-12 10:32:11.1298 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-12-12 10:32:11.1438 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-12-12 10:32:11.1568 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-12-12 10:32:11.1698 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-12-12 10:32:11.2089 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-12-12 10:32:11.2229 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-12-12 10:32:11.2369 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-12-12 10:32:11.2509 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-12-12 10:32:11.2649 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-12-12 10:32:11.2789 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-12-12 10:32:11.2789 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-12-12 10:32:11.3079 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-12-12 10:32:11.3219 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-12-12 10:32:11.3359 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-12-12 10:32:11.3489 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-12-12 10:32:11.3629 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-12-12 10:32:11.3759 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-12-12 10:32:11.3899 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-12-12 10:32:11.4029 ERROR CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-12-12 10:32:11.4029 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:32:11.4029 INFO CompanyID-1156|CompanyNameKIMIA BIOSCIENCES  LTD-Saved
+2019-12-12 10:32:33.1104 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:32:33.1104 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:32:33.1104 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:32:33.1224 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:32:34.1214 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:32:34.1214 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:32:34.1552 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:32:34.1886 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:32:34.2202 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:32:34.2320 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:32:36.1270 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Company Addrres Saved
+2019-12-12 10:34:11.2032 ERROR SPWrapper SaveCourse Ex - The error description is 'An invalid character was found in text content.'.
+The error description is 'An invalid character was found in text content.'.
+Could not find prepared statement with handle 0.
+The XML parse error 0xc00ce508 occurred on line number 1, near the XML text "<NewDataSet><CompanyStream><Course>BSc".
+The statement has been terminated.
+2019-12-12 10:35:53.0832 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Failed EXThe error description is 'An invalid character was found in text content.'.
+The error description is 'An invalid character was found in text content.'.
+Could not find prepared statement with handle 0.
+The XML parse error 0xc00ce508 occurred on line number 1, near the XML text "<NewDataSet><CompanyStream><Course>BSc".
+The statement has been terminated.
+2019-12-12 10:35:53.0832 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:35:53.0832 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:35:53.0902 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.0902 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.0902 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.0902 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.0902 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.0902 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.0902 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.0902 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.0902 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.0902 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.1052 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.1052 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.1052 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.1052 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.1052 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.1052 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.1052 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.1052 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.1052 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:35:53.1372 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-12-12 10:35:53.1562 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-12-12 10:35:53.1739 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-12-12 10:35:53.1919 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-12-12 10:35:53.2349 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-12-12 10:35:53.2519 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-12-12 10:35:53.2699 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-12-12 10:35:53.2891 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-12-12 10:35:53.3101 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-12-12 10:35:53.3331 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-12-12 10:35:53.3541 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-12-12 10:35:53.3751 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-12-12 10:35:53.3931 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-12-12 10:35:53.4121 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-12-12 10:35:53.4311 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-12-12 10:35:53.4501 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-12-12 10:35:53.4671 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-12-12 10:35:53.4861 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-12-12 10:35:53.5071 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-12-12 10:35:53.5281 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-12-12 10:35:53.5481 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-12-12 10:35:53.5651 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-12-12 10:35:53.5821 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-12-12 10:35:53.5991 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-12-12 10:35:53.6161 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-12-12 10:35:53.6351 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-12-12 10:35:53.6561 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-12-12 10:35:53.6751 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-12-12 10:35:53.6961 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-12-12 10:35:53.7161 ERROR CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-12-12 10:35:53.7161 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:35:53.7161 INFO CompanyID-1157|CompanyNameKIMIA BIOSCIENCES  LTD-Saved
+2019-12-12 10:36:01.5295 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:36:01.5575 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:36:01.5645 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:36:01.5645 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:36:02.3295 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:02.3295 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:02.3295 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:02.3635 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:02.3635 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:02.3635 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:04.4650 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Company Addrres Saved
+2019-12-12 10:36:06.0723 ERROR SPWrapper SaveCourse Ex - The error description is 'An invalid character was found in text content.'.
+The error description is 'An invalid character was found in text content.'.
+Could not find prepared statement with handle 0.
+The XML parse error 0xc00ce508 occurred on line number 1, near the XML text "<NewDataSet><CompanyStream><Course>BSc".
+The statement has been terminated.
+2019-12-12 10:36:06.0903 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Failed EXThe error description is 'An invalid character was found in text content.'.
+The error description is 'An invalid character was found in text content.'.
+Could not find prepared statement with handle 0.
+The XML parse error 0xc00ce508 occurred on line number 1, near the XML text "<NewDataSet><CompanyStream><Course>BSc".
+The statement has been terminated.
+2019-12-12 10:36:06.0903 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:36:06.0903 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:36:06.0903 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.0903 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.0903 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.0903 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.0903 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.0903 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1063 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1063 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1063 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1213 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1213 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1213 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1213 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1213 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1213 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1213 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1213 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1213 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1213 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:06.1483 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-12-12 10:36:06.1603 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-12-12 10:36:06.1743 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-12-12 10:36:06.1883 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-12-12 10:36:06.2033 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-12-12 10:36:06.2163 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-12-12 10:36:06.2303 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-12-12 10:36:06.2303 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-12-12 10:36:06.2563 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-12-12 10:36:06.2703 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-12-12 10:36:06.2853 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-12-12 10:36:06.2993 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-12-12 10:36:06.3133 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-12-12 10:36:06.3263 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-12-12 10:36:06.3263 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-12-12 10:36:06.3533 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-12-12 10:36:06.3653 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-12-12 10:36:06.3783 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-12-12 10:36:06.3913 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-12-12 10:36:06.4043 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-12-12 10:36:06.4193 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-12-12 10:36:06.4193 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-12-12 10:36:06.4443 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-12-12 10:36:06.4583 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-12-12 10:36:06.4713 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-12-12 10:36:06.4863 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-12-12 10:36:06.5003 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-12-12 10:36:06.5133 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-12-12 10:36:06.5273 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-12-12 10:36:06.5273 ERROR CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-12-12 10:36:06.5434 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:06.5434 INFO CompanyID-1158|CompanyNameKIMIA BIOSCIENCES  LTD-Saved
+2019-12-12 10:36:14.4323 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:36:14.4343 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:36:14.4343 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:36:14.4343 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:36:14.5928 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:14.5928 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:14.5928 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:14.5928 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:14.5928 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:14.5928 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:16.2165 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Company Addrres Saved
+2019-12-12 10:36:49.5328 ERROR SPWrapper SaveCourse Ex - The error description is 'An invalid character was found in text content.'.
+The error description is 'An invalid character was found in text content.'.
+Could not find prepared statement with handle 0.
+The XML parse error 0xc00ce508 occurred on line number 1, near the XML text "<NewDataSet><CompanyStream><Course>BSc".
+The statement has been terminated.
+2019-12-12 10:36:49.5468 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Failed EXThe error description is 'An invalid character was found in text content.'.
+The error description is 'An invalid character was found in text content.'.
+Could not find prepared statement with handle 0.
+The XML parse error 0xc00ce508 occurred on line number 1, near the XML text "<NewDataSet><CompanyStream><Course>BSc".
+The statement has been terminated.
+2019-12-12 10:36:49.5468 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:36:49.5468 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:36:49.5468 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5468 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5468 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5468 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5468 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5588 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5588 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5588 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5588 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5588 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5588 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5588 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5588 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5588 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5588 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5588 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5588 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5748 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5748 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:36:49.5898 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-12-12 10:36:49.5898 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-12-12 10:36:49.6158 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-12-12 10:36:49.6288 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-12-12 10:36:49.6418 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-12-12 10:36:49.6558 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-12-12 10:36:49.6688 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-12-12 10:36:49.6688 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-12-12 10:36:49.6968 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-12-12 10:36:49.7108 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-12-12 10:36:49.7258 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-12-12 10:36:49.7398 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-12-12 10:36:49.7568 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-12-12 10:36:49.7708 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-12-12 10:36:49.7838 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-12-12 10:36:49.7968 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-12-12 10:36:49.8098 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-12-12 10:36:49.8098 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-12-12 10:36:49.8358 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-12-12 10:36:49.8478 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-12-12 10:36:49.8608 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-12-12 10:36:49.8748 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-12-12 10:36:49.8888 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-12-12 10:36:49.8888 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-12-12 10:36:49.9168 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-12-12 10:36:49.9318 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-12-12 10:36:49.9498 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-12-12 10:36:49.9718 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-12-12 10:36:49.9848 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-12-12 10:36:49.9978 ERROR CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-12-12 10:36:49.9978 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:36:49.9978 INFO CompanyID-1159|CompanyNameKIMIA BIOSCIENCES  LTD-Saved
+2019-12-12 10:37:33.9676 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:37:33.9676 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- PR Details Saved
+2019-12-12 10:37:33.9676 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:37:33.9676 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Contact Details Saved
+2019-12-12 10:37:35.3956 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:37:35.3956 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:37:35.3956 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:37:35.4035 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:37:35.4035 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:37:35.4035 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:37:37.5878 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Company Addrres Saved
+2019-12-12 10:37:39.7809 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- CompanyStream Saved
+2019-12-12 10:37:39.7809 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- CompanyStream Saved
+2019-12-12 10:37:39.7809 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- CompanyStream Saved
+2019-12-12 10:37:39.7809 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- CompanyStream Saved
+2019-12-12 10:37:39.7929 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- CompanyStream Saved
+2019-12-12 10:37:40.4392 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:37:40.4392 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Contact Persons Saved
+2019-12-12 10:37:40.4392 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4392 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4392 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4493 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4493 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4493 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4493 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4493 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4493 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4493 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4493 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4493 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4493 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4493 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4493 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4662 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4662 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4662 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4662 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Saved
+2019-12-12 10:37:40.4842 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES0' does not belong to table .
+2019-12-12 10:37:40.4982 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES1' does not belong to table .
+2019-12-12 10:37:40.5122 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES2' does not belong to table .
+2019-12-12 10:37:40.5122 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES3' does not belong to table .
+2019-12-12 10:37:40.5402 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES4' does not belong to table .
+2019-12-12 10:37:40.5532 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES5' does not belong to table .
+2019-12-12 10:37:40.5672 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES6' does not belong to table .
+2019-12-12 10:37:40.5812 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES7' does not belong to table .
+2019-12-12 10:37:40.5943 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES8' does not belong to table .
+2019-12-12 10:37:40.6082 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES9' does not belong to table .
+2019-12-12 10:37:40.6212 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES10' does not belong to table .
+2019-12-12 10:37:40.6212 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES11' does not belong to table .
+2019-12-12 10:37:40.6502 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES12' does not belong to table .
+2019-12-12 10:37:40.6672 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES13' does not belong to table .
+2019-12-12 10:37:40.6832 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES14' does not belong to table .
+2019-12-12 10:37:40.6992 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES15' does not belong to table .
+2019-12-12 10:37:40.6992 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES16' does not belong to table .
+2019-12-12 10:37:40.7272 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES17' does not belong to table .
+2019-12-12 10:37:40.7402 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES18' does not belong to table .
+2019-12-12 10:37:40.7533 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES19' does not belong to table .
+2019-12-12 10:37:40.7663 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES20' does not belong to table .
+2019-12-12 10:37:40.7803 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES21' does not belong to table .
+2019-12-12 10:37:40.7933 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES22' does not belong to table .
+2019-12-12 10:37:40.7933 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES23' does not belong to table .
+2019-12-12 10:37:40.8213 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES24' does not belong to table .
+2019-12-12 10:37:40.8353 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES25' does not belong to table .
+2019-12-12 10:37:40.8493 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES26' does not belong to table .
+2019-12-12 10:37:40.8643 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES27' does not belong to table .
+2019-12-12 10:37:40.8773 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES28' does not belong to table .
+2019-12-12 10:37:40.8903 ERROR CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Extra Call Notes Failed EXColumn 'PREVIOUSCALLNOTES29' does not belong to table .
+2019-12-12 10:37:40.8903 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD- Call Notes Saved
+2019-12-12 10:37:40.8903 INFO CompanyID-1160|CompanyNameKIMIA BIOSCIENCES  LTD-Saved

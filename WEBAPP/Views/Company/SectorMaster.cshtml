@@ -1,0 +1,74 @@
+﻿@model IEnumerable<WEBAPP.Models.Master>
+
+@{
+    ViewBag.Title = "SectorMaster";
+}
+
+<h2>Sector Master</h2>
+
+<script>
+
+    function getSectorMaster(Id) {
+
+        $.ajax({
+            url: "/Company/getSectorMaster",
+            data: { 'Id': Id },
+            success: function (data) {
+
+                $("#Id").val(data.Id);
+                $("#Name").val(data.Name);
+              
+
+            }
+        });
+    }
+
+</script>
+
+@using (Html.BeginForm("SectorMaster", "Company", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form", role = "form" }))
+{
+
+    <div class="row">
+        <div class="col-3">
+            <input type="text" required class="form-control text-box" placeholder="Sector" id="Name" name="Name" />
+            <input type="hidden" name="Id" id="Id" />
+            <input type="hidden" name="Type" id="Type" />
+        </div>
+        
+        <div>
+            <input type="submit" class="btn btn-sm btn-primary" value="Save Sector" />
+        </div>
+
+    </div>
+    
+   
+}
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model.Select((x, i) => new { Data = x, Index = i +1 }))
+    {
+        <tr>
+            <td>
+                @item.Index
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data.Name)
+            </td>
+            <td>
+                <a onclick="getSectorMaster(`@item.Data.Id`);">Edit</a>
+            </td>
+        </tr>
+    }
+
+</table>

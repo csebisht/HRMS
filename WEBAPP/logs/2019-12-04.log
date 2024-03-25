@@ -1,0 +1,1 @@
+2019-12-04 00:51:48.4321 ERROR SPWrapper SaveContact Ex - Procedure or function 'sp_SaveContact' expects parameter '@EmailID', which was not supplied.

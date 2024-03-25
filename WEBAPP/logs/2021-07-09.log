@@ -1,0 +1,2 @@
+2021-07-09 04:25:41.1271 ERROR SPWrapper GetThirdPartyMasters Ex - Could not find stored procedure 'sp_GetThirdPartyMaster'.
+2021-07-09 04:26:28.6410 ERROR SPWrapper GetThirdPartyMasters Ex - Could not find stored procedure 'sp_GetThirdPartyMaster'.

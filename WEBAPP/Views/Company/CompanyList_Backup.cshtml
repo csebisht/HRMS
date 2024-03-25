@@ -1,0 +1,585 @@
+﻿@model IEnumerable<WEBAPP.Models.Company>
+
+@{
+    /**/
+
+    ViewBag.Title = "Company List";
+
+}
+
+
+<style>
+    .modal-body {
+        max-height: calc(100vh - 210px);
+        overflow-y: auto;
+    }
+</style>
+
+<h2>Company List</h2>
+
+<a href="/Company/create" class="btn btn-sm btn-success">
+    <i class="fas fa-plus-circle"></i>
+    <span> Add new</span>
+</a>
+<hr />
+@*<script>
+        $(function () {
+
+            $('#filter').change(function () {
+
+
+            });
+        });
+
+
+    </script>*@
+
+
+
+
+
+@using (Html.BeginForm("CompanyList", "Company", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form", role = "form" }))
+{
+
+
+    <div class="form-row">
+
+        <label for="filter"> <b></b></label>
+
+        <div class="col">
+            <select class="form-control " id="filter" name="filter">
+                <option value="">Follow Ups</option>
+                <option value="All">All</option>
+                <option value="Today">Today</option>
+                <option value="ThisMonth">This Month</option>
+            </select>
+        </div>
+
+        <div class="col">
+            <input type="text" class="form-control " id="text2" name="Global" placeholder="Global Search" />
+        </div>
+        <div class="col">
+
+
+            <button class="btn btn-primary" type="submit">
+                <i class="fas fa-search"></i><span> Search</span>
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+}
+
+<br />
+
+
+
+
+
+<table class="table table-hover table-bordered">
+    <thead class="thead-light">
+        <tr>
+            <th>Actions</th>
+            <th>
+                Color Code
+            </th>
+            <th>
+                Company Name
+            </th>
+            @*<th>
+                    Jd Received
+                </th>
+                <th>
+                    Past Recruitments
+                </th>
+                <th>
+                    Current Recruiter
+                </th>
+                <th>
+                    Hired From
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Summary)
+                </th>
+
+                <th>
+                    Call Note(s)
+                </th>
+
+                <th>
+                    MTC/STC
+                </th>
+
+                <th>
+                    Contact Detail(s)
+                </th>
+
+                <th>
+                    Contact Number
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Address1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Address2)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Remarks)
+                </th>
+                <th>
+                    Guest Lecture
+                </th>
+                <th>
+                    Advisory Board
+
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+                <th>
+                    Sub Location
+                </th>
+                <th>
+                    Hiring Area
+                </th>
+                <th>
+                    Plant/Regd Office
+                </th>
+                <th>
+                    Transferred From
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Sector)
+                </th>
+                <th>
+                    Date Given
+                </th>
+                <th>
+                    Research Source
+                </th>
+                <th>
+                    Stream Required
+
+                </th>
+                <th>
+                    Pay Package
+                </th>
+                <th>
+                    Summer Training
+
+                </th>
+                <th>
+                    User Remarks
+
+                </th>
+                <th>
+                    Third Party
+                </th>
+                <th>
+                    Is Active
+                </th>*@
+
+        </tr>
+    </thead>
+
+    @foreach (var item in Model)
+    {
+
+        <tr>
+
+            <td>
+
+                <a href="/Company/Edit/@item.Id" class="btn">
+                    <i class="fas fa-edit text-muted"></i>
+
+                </a>
+
+            </td>
+            <td>
+                <button type="button" style="background-color:@item.ColorCode" class="btn btn-lg"></button>
+
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyName, new { @style = "backgroud-color:Red" })
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JdReceived)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PastRecruitments)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentRecruiter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HiredFrom)
+            </td>
+            <td>
+                <a class="text-info" data-toggle="modal" data-target="#ModalScrollable_summary_@item.Id"><i class="fas fa-eye"></i> View </a>
+                <div class="modal fade" id="ModalScrollable_summary_@item.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalScrollableTitle">View Summary</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                @Html.Raw(item.Summary)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </td>
+
+            <td>
+                <a class="text-info" data-toggle="modal" data-target="#exampleModalScrollable_@item.Id"> <i class="fas fa-eye"></i>View</a>
+                <div class="modal fade" id="exampleModalScrollable_@item.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalScrollableTitle">Call Notes/ Follow Ups</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            @using (Html.BeginForm("AddNotes", "Company", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                            {
+                                <div class="modal-body">
+
+                                    <table class="table table-responsive">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th>
+                                                    Date
+                                                </th>
+                                                <th>Discription</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            @foreach (var subitem in item.CallNoteList)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @subitem.ActivityDate
+                                                    </td>
+                                                    <td>@subitem.Description</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+
+                                    </table>
+
+
+
+                                    @Html.AntiForgeryToken()
+
+                                    <hr />
+                                    <input type="hidden" name="CompanyID" value="@item.Id" />
+                                    @Html.ValidationSummary("", new { @class = "text-danger" })
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Description </label>
+
+                                        <div class="col-md-10">
+                                            <input type="text" required name="Description" class="form-control" />
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Date </label>
+
+                                        <div class="col-md-10">
+                                            <input type="date" required name="ActivityDate" class="form-control" />
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="form-check checkbox">
+
+
+
+
+                                            <input class="form-check-input" type="checkbox" value="true" id="IsFollowUp" name="IsFollowUp" /> Is Followup?
+
+
+
+                                        </div>
+                                    </div>
+
+                                    @*<div class="form-group">
+                                            <div class="col-md-offset-2 col-md-10">
+                                                <input type="submit" class="btn btn-default" value="Submit" />
+                                            </div>
+                                        </div>*@
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <input type="submit" value="Save Changes" class="btn btn-primary" />
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+            </td>
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.MTCorSTC)
+            </td>
+
+
+            <td>
+
+                <a class="text-info" data-toggle="modal" data-target="#ModalScrollable_Contacts_@item.Id"><i class="fas fa-eye"></i> View </a>
+                <div class="modal fade" id="ModalScrollable_Contacts_@item.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalScrollableTitle">Contacts</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            @using (Html.BeginForm("AddContact", "Company", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                            {
+                                <div class="modal-body">
+
+                                    <table class="table table-responsive">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th>Code</th>
+                                                <th>
+                                                    Name
+                                                </th>
+                                                <th>Mobile Number</th>
+                                                <th>Designation</th>
+                                                <th>Email</th>
+                                                <th>Phone Number</th>
+                                                <th>DOB</th>
+                                                <th>Anniversary</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            @foreach (var subitem in item.CompanyContactList)
+                                            {
+                                                <tr>
+                                                    <td><button class="btn" style="background-color:@subitem.ColorCode"> </button></td>
+                                                    <td>
+                                                        @subitem.ContactName
+                                                    </td>
+                                                    <td>@subitem.MobileNumber</td>
+                                                    <td>@subitem.Designation</td>
+                                                    <td>@subitem.EmailID</td>
+                                                    <td>@subitem.PhoneNumber</td>
+                                                    <td>@subitem.DOB</td>
+                                                    <td>@subitem.Anniversary</td>
+
+                                                </tr>
+                                            }
+                                        </tbody>
+
+                                    </table>
+
+
+
+
+                                    @Html.AntiForgeryToken()
+
+                                    <hr />
+                                    <input type="hidden" name="CompanyID" value="@item.Id" />
+                                    @Html.ValidationSummary("", new { @class = "text-danger" })
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Name</label>
+                                        <div class="col-md-10">
+                                            <input type="text" required name="ContactName" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Mobile Number</label>
+                                        <div class="col-md-10">
+                                            <input type="text" required name="MobileNumber" class="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Designation</label>
+                                        <div class="col-md-10">
+                                            <input type="text" name="Designation" class="form-control" />
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Email</label>
+                                        <div class="col-md-10">
+                                            <input type="text" name="EmailID" class="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Phone Number</label>
+                                        <div class="col-md-10">
+                                            <input type="text" name="PhoneNumber" class="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">DOB</label>
+                                        <div class="col-md-10">
+                                            <input type="date" name="DOB" class="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Anniversary</label>
+                                        <div class="col-md-10">
+                                            <input type="date" name="Anniversary" class="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">ColorCode</label>
+                                        <div class="col-md-10">
+                                            <input type="text" name="ColorCode" class="form-control" />
+                                        </div>
+                                    </div>
+
+                                    @*<div class="form-group">
+                                            <div class="col-md-offset-2 col-md-10">
+                                                <input type="submit" class="btn btn-default" value="Submit" />
+                                            </div>
+                                        </div>*@
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <input type="submit" value="Save Changes" class="btn btn-primary" />
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+            </td>
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactNumber)
+            </td>
+            <td>
+
+                <p>
+                    <a class="text-info" data-toggle="collapse" href="#collapse_@item.Id" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        View Address
+                    </a>
+
+                </p>
+                <div class="collapse" id="collapse_@item.Id">
+                    <div class="card card-body">
+                        @Html.DisplayFor(modelItem => item.Address1)
+                    </div>
+                </div>
+
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Remarks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GuestLecture)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdvisoryBoard)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HiringArea)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlantorRegdOffice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransferredFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sector)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateGiven)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResearchSource)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StreamRequired)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PayPackage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SummerTraining)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserRemarks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThirdParty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsActive)
+            </td>
+
+        </tr>
+    }
+
+</table>
+<nav aria-label="...">
+    <ul class="pagination">
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
+
+

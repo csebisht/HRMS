@@ -1,0 +1,84 @@
+﻿@model IEnumerable<WEBAPP.Models.Master>
+
+@{
+    ViewBag.Title = "CollegeMaster";
+}
+
+    <script>
+
+        function getCollegeMaster(Id) {
+
+            $.ajax({
+                url: "/Company/getCollegeMaster",
+                data: { 'Id': Id },
+                success: function (data) {
+
+                    $("#Id").val(data.Id);
+                    $("#Name").val(data.Name);
+                    $("#Location").val(data.Location);
+
+                }
+            });
+        }
+
+    </script>
+
+<h3>  College  <i class="fa fa-university" aria-hidden="true"></i></h3>
+
+@using(Html.BeginForm("CollegeMaster", "Company", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form", role = "form" }))
+{
+
+
+<div class="row">
+    <div class="col-3">
+        <input type="text" required class="form-control text-box" placeholder="College" id="Name" name="Name" />
+       
+        <input type="hidden" name="Id" id="Id" />
+        <input type="hidden" name="Type" id="Type" />
+    </div>
+    <div class="col-3">
+        
+        <input type="text" required class="form-control text-box" placeholder="Location" id="Location" name="Location" />
+       
+    </div>
+
+    <div>
+        <input type="submit" class="btn btn-sm btn-primary" value="Save College" />
+    </div>
+
+</div>
+}
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model.Select((x, i) => new { Data = x, Index = i +1 }))
+    {
+<tr>
+    <td>
+        @item.Index
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Data.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Data.Location)
+    </td>
+    <td>
+        <a onclick="getCollegeMaster(`@item.Data.Id`);">Edit </a>
+    </td>
+</tr>
+    }
+
+</table>

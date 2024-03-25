@@ -1,0 +1,2 @@
+2021-06-28 21:05:46.3137 ERROR SPWrapper SaveCourse Ex - Could not find stored procedure 'sp_SaveStream'.
+2021-06-28 21:23:20.8651 ERROR SPWrapper SaveCourse Ex - Procedure or function 'sp_SaveStream' expects parameter '@CourseId', which was not supplied.

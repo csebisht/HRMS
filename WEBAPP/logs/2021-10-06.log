@@ -1,0 +1,15 @@
+2021-10-06 11:53:32.8189 ERROR SPWrapper GetCompanyListByPage Ex - @start is not a parameter for procedure GetCompanies.
+2021-10-06 11:54:00.4000 ERROR SPWrapper GetCompanyListByPage Ex - @start is not a parameter for procedure GetCompanies.
+2021-10-06 11:58:43.1086 ERROR SPWrapper GetCompanyListByPage Ex - @start is not a parameter for procedure GetCompanies.
+2021-10-06 12:27:07.8382 ERROR SPWrapper GetCompanyListByPage Ex - Incorrect syntax near the keyword 'in'.
+Invalid usage of the option NEXT in the FETCH statement.
+2021-10-06 12:37:40.6810 ERROR SPWrapper GetCompanyListByPage Ex - Must declare the scalar variable "@username".
+Unclosed quotation mark after the character string ')
+order by com.CompanyName asc
+OFFSET 0 ROWS
+FETCH NEXT 10 ROWS ONLY OPTION (RECOMPILE)'.
+2021-10-06 12:44:18.8791 ERROR SPWrapper GetCompanyListByPage Ex - Must declare the scalar variable "@username".
+Unclosed quotation mark after the character string ')
+order by com.CompanyName asc
+OFFSET 0 ROWS
+FETCH NEXT 10 ROWS ONLY OPTION (RECOMPILE)'.

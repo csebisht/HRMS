@@ -1,0 +1,50 @@
+﻿@model IEnumerable<WEBAPP.Models.ExtraCallNotes>
+
+@{
+    ViewBag.Title = "ExtraCallNotes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ExtraCallNotes</h2>
+
+<p>
+    @using (@Html.BeginForm("ExtraCallNotes", "Company", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form", role = "form" }))
+    {
+        @Html.DropDownList("Id", new SelectList(ViewBag.CompanyList, "Id", "CompanyName"), "--Select--", new { @class = "form-control" })
+        <input type="submit" value="Submit" />
+    }
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Activity Date
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Created On
+        </th>
+
+    </tr>
+@if (Model != null)
+{
+foreach (var item in Model)
+{
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.ActivityDate)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Value)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CreatedOn)
+    </td>
+
+</tr>
+}
+}
+</table>

@@ -1,0 +1,586 @@
+﻿@model WEBAPP.Models.Company
+@using Microsoft.AspNet.Identity;
+@{
+    /**/
+    ViewBag.Title = "Company List";
+}
+<script>
+    $(document).ready(function () {
+        $("#FollowUpDateFrom").datepicker({
+            dateFormat: 'dd-mm-yy', changeMonth: true,
+            changeYear: true
+        });
+        $("#FollowUpDateTo").datepicker({
+            dateFormat: 'dd-mm-yy', changeMonth: true,
+            changeYear: true
+        });
+        $("#CallDone").datepicker({
+            dateFormat: 'mm-dd-yy', changeMonth: true,
+            changeYear: true
+        });
+        $("#ContactDOB").datepicker({
+            dateFormat: 'mm-dd-yy', changeMonth: true,
+            changeYear: true
+        });
+        getyear();
+    });
+    function getyear() {
+        $(".years").html("");
+        var year = new Date().getFullYear() + 5;
+        for (i = year; i > 1990; i--) {
+            $('.years').append($('<option />').val(i).html(i));
+        }
+    }
+</script>
+<style>
+    .modal-body {
+        max-height: calc(100vh - 210px);
+        overflow-y: auto;
+    }
+
+    .himlay {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        /*margin-right: 171px;*/
+        margin-left: -15px;
+    }
+
+    body {
+        font-size: 12px;
+        color: black;
+    }
+
+    .scrollit {
+        overflow: scroll;
+        height: 598px;
+    }
+</style>
+@*<h2>Company List</h2>*@
+@*<script>
+        $(function () {
+            $('#filter').change(function () {
+            });
+        });
+    </script>*@
+@using (Html.BeginForm("Export", "Company", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form", role = "form" }))
+{
+    <div class="form-row">
+        <label for="filter"> <b></b></label>
+        <div class="col-3">
+            <select class="form-control " id="filter" name="filter">
+                <option value="">Follow Ups</option>
+                <option value="All">All</option>
+                <option value="Today">Today</option>
+                <option value="Past">Past</option>
+                <option value="ThisMonth">This Month</option>
+                <option value="Important">Important</option>
+                <option value="Positive">Positive</option>
+                <option value="Coordination">Coordination</option>
+                @if (User.Identity.GetUserName().ToUpper() == "ADMIN@AE.IN")
+                {
+                    <option value="Deleted">Deleted</option>
+                }
+            </select>
+        </div>
+        <div class="col-2">
+            <input type="text" class="form-control " id="text2" name="Global" placeholder="Global Search" />
+        </div>
+        <div class="col">
+            <button class="btn btn-sm btn-primary" type="submit">
+                <i class="fas fa-search"></i><span> Search</span>
+            </button>
+            @if (User.Identity.GetUserName().ToUpper() == "ADMIN@AE.IN")
+            {
+                @Ajax.ActionLink("Create", // <-- Text to display
+                       "Create", // <-- Action Method Name
+                       new { },
+                       new AjaxOptions
+                       {
+                           UpdateTargetId = "dv_PartialView", // <-- DOM element ID to update
+                           InsertionMode = InsertionMode.Replace, // <-- Replace the content of DOM element
+                           HttpMethod = "GET" // <-- HTTP method
+                       }, new { @class = "btn btn-sm btn-success" })
+            }
+            @*<a href="/Company/create" class="btn btn-sm btn-success">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Create</span>
+                </a>*@
+        </div>
+        <div class="col">
+            <a class="btn btn-sm btn-warning" style="color:white" data-toggle="modal" data-target="#exampleModalScrollable_search"> <i class="fas  fa-search"></i>Advance Search</a>
+            <div class="modal fade" id="exampleModalScrollable_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Advance Search</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        @using (Html.BeginForm("CompanyListSearch", "Company", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="control-label"> JD Received</label>
+                                        <select name="Year" id="SYear" class="form-control multiselect-ui years" multiple="multiple"></select>
+                                    </div>
+                                    <div class="col">
+                                        <label class="control-label"> JD Not Received</label>
+                                        <select name="SNotYear" id="SNotYear" class="form-control years"></select>
+                                    </div>
+                                    @*<div class="col">
+            <label class="control-label">Color Code </label>
+            @Html.DropDownList("ColorCode", new SelectList(Model.FirstOrDefault().ddlcolor, "value", "text"), new { @class = "form-control multiselect-ui", @multiple = "multiple" })
+        </div>*@
+                                    <div class="col">
+                                        <label class="control-label">Stream </label>
+                                        @Html.DropDownList("SearchStream", new SelectList(Model.MyStream.ToList().Select(s => new { Id = s.Id, CourseName = string.Format("{0}-- {1}", s.CourseName, s.StreamName), StreamName = s.StreamName }).ToList(), "StreamName", "CourseName"), new { @class = "form-control multiselect-ui", @multiple = "multiple" })
+                                    </div>
+                                    <div class="col">
+                                        <label class="control-label">Sector  </label>
+                                        @Html.DropDownList("SearchSector", new SelectList(Model.ddlSector, "value", "text"), new { @class = "form-control multiselect-ui", @multiple = "multiple" })
+                                    </div>
+                                    <div class="col">
+                                        <label class="control-label">Hired From </label>
+                                        @Html.DropDownList("SearchCollege", new SelectList(Model.objCollegeMasterList, "value", "text"), new { @class = "form-control multiselect-ui", @multiple = "multiple" })
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="control-label"> Visit Status</label>
+                                        <select class="form-control" name="VisitStatus">
+                                            <option value="">Select</option>
+                                            <option value="true">Done</option>
+                                            <option value="false">Required</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label class="control-label"> Visit Details</label>
+                                        <input class="form-control" type="text" name="VisitDetails" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="control-label"> Events</label>
+                                        @Html.DropDownList("EventTypeId", Model.objCollegeEventList, "", new { @class = "form-control" })
+                                    </div>
+                                    <div class="col">
+                                        <label class="control-label"> Events Status</label>
+                                        <select class="form-control" name="EventStatus">
+                                            <option value="">Select</option>
+                                            <option value="true">Done</option>
+                                            <option value="false">Required</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="control-label"> Sub Location</label>
+                                        <input class="form-control" type="text" name="SubLocation" />
+                                    </div>
+                                    <div class="col">
+                                        <label class="control-label"> City</label>
+                                        @Html.DropDownList("sCityId", Model.ddlCity, "select", new { @class = "form-control" })
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+
+                                        <label class="control-label"> Transferred From</label>
+                                        <input class="form-control" type="text" name="TransferredFrom" />
+                                    </div>
+                                    <div class="col">
+                                        <label class="control-label"> Research Source</label>
+                                        <input class="form-control" type="text" name="ResearchSource" />
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="control-label"> FollowUp From</label>
+                                        <input type="text" class="form-control" id="FollowUpDateFrom" name="FollowUpDateFrom" />
+
+                                    </div>
+                                    <div class="col">
+                                        <label class="control-label"> FollowUp To</label>
+                                        <input type="text" class="form-control" id="FollowUpDateTo" name="FollowUpDateTo" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="control-label"> Package </label>
+                                        <select name="Package" class="form-control">
+                                            <option value="">Select Package</option>
+                                            <option value="0-1">0-1 Lac</option>
+                                            <option value="1-2">1-2 Lac</option>
+                                            <option value="2-3">2-3 Lac</option>
+                                            <option value="3-4">3-4 Lac</option>
+                                            <option value="4-5">4-5 Lac</option>
+                                            <option value="5-6">5-6 Lac</option>
+                                            <option value="6-7">6-7 Lac</option>
+                                            <option value="8">7-8 Lac</option>
+                                            <option value="8-9">8-9 lac</option>
+                                            <option value="9-10">9-10 lac</option>
+                                            <option value="10-15">10-15 lac</option>
+                                            <option value="15-20">15-20 lac</option>
+                                            <option value="20-30">20-30 lac</option>
+                                            <option value="30-40">30-40 lac</option>
+                                            <option value="40-">40-50 lac</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label class="control-label">Color</label>
+                                        @Html.DropDownList("ColorCode", Model.ddlcolor, "select", new { @class = "form-control", @id = "AdvColorCode" })
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="control-label"> Call Done</label>
+                                        <input class="form-control" type="text" id="CallDone" name="CallDone" />
+                                    </div>
+                                    <div class="col">
+                                        <label class="control-label">Accept Gift</label>
+                                        <input class="form-control" type="text" id="AcceptGift" name="AcceptGift" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="control-label"> Is Active</label>
+                                        <select class="form-control" name="IsActive">
+                                            <option value="">Please Select</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label class="control-label"> DOB</label>
+                                        <input type="text" class="form-control" id="ContactDOB" name="DOB" />
+                                    </div>
+                                    <div class="col">
+                                        <label class="control-label"> Summer Training</label>
+                                        <input class="form-control" type="text" name="SummerTraining" />
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col">
+                                        <label class="control-label"> Contact Number</label>
+                                        <input type="text" class="form-control" id="Contact" name="Contact" />
+                                    </div>
+                                    <div class="col">
+                                        <label class="control-label"> Alloted To</label>
+                                        <input type="text" class="form-control" id="AllotedTo" name="AllotedTo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <input type="submit" value="Search" class="btn btn-primary" />
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<br />
+<div class="row himlay" style="border-right:-1.5px  solid lightgrey">
+    <div scrollit">
+        <table class="table table-condensed" border="1">
+            <thead>
+                <tr>
+                    @*<th>Actions</th>*@
+                    <th>
+                        Company
+                    </th>
+                    <th>
+                        FollowUp Date
+                    </th>
+                    <th>
+                        Remarks
+                    </th>
+                    <th>
+                        Alloted To
+                    </th>
+                    <th>Summary</th>
+                    <th>
+                        JDReceived
+                    </th>
+                    <th>
+                        PastRecruitmentDetails
+                    </th>
+                    <th>
+                        MTC/STC
+                    </th>
+                    <th>
+                        ContactName
+                    </th>
+                    <th>
+                        ContactMobile
+                    </th>
+                    <th>
+                        Designation
+                    </th>
+                    <th>
+                        EmailID
+                    </th>
+                    <th>
+                        ContactPhone
+                    </th>
+                    <th>
+                        Address
+                    </th>
+                    <th>VisitRequired</th>
+                    <th>AdvisoryBoard</th>
+                    <th>Sector</th>
+                    <th>
+                        Date Given
+                    </th>
+                    <th>Source</th>
+                    <th>StreamRequired</th>
+                    <th>PayPackages</th>
+                    <th>CallNotes</th>
+                    <th>
+                        Created On
+                    </th>
+
+
+                </tr>
+            </thead>
+            @if (Model.CompanyList.Count == 0)
+            {
+                <tr>
+                    <td>
+                        No data found!
+                        <i class="fas fa-frown"></i>
+                    </td>
+                </tr>
+            }
+            @foreach (var item in Model.CompanyList)
+            {
+                <tr>
+                    @*<td>
+                               @Ajax.ActionLink("Edit", // <-- Text to display
+                        "Edit", // <-- Action Method Name
+                        new { id = item.Id },
+                        new AjaxOptions
+                        {
+                            UpdateTargetId = "dv_PartialView", // <-- DOM element ID to update
+                            InsertionMode = InsertionMode.Replace, // <-- Replace the content of DOM element
+                            HttpMethod = "GET" // <-- HTTP method
+                        }, new { @class = "btn btn-sm btn-success" })
+                           </td>*@
+                    <td>
+                        @item.CompanyName
+                    </td>
+                    <td>@item.FollowUpDate</td>
+                    <td>
+                        @Html.Raw(item.Remarks)
+                    </td>
+                    <td>
+                        @item.AllotedTo
+                    </td>
+                    <td>
+                        @Html.Raw(item.Summary)
+                    </td>
+                    <td>
+                        @foreach (var Jd in item.JobDescriptionList)
+                        {
+                            if (Jd.Title.ToUpper() == "NO")
+                            {
+                                <p>Yes - @Jd.Year</p>
+                            }
+
+                        }
+                    </td>
+                    <td>
+                        @foreach (var Jd in item.JobDescriptionList)
+                        {
+                            if (Jd.Title.ToUpper() == "YES")
+                            {
+                                <p>@Jd.Type - @Jd.Year</p>
+                            }
+
+                        }
+                    </td>
+                    <td>
+                        @item.MTCorSTC
+                    </td>
+                    <td>
+
+
+                        @foreach (var contact in item.CompanyContactList)
+                        {
+                            <p> @contact.ContactName</p>
+                        }
+                    </td>
+                    <td>
+
+
+                        @foreach (var contact in item.CompanyContactList)
+                        {
+                            <p> @contact.MobileNumber</p>
+                        }
+
+                    </td>
+                    <td>
+
+
+                        @foreach (var contact in item.CompanyContactList)
+                        {
+                            <p> @contact.Designation</p>
+                        }
+
+                    </td>
+                    <td>
+
+
+                        @foreach (var contact in item.CompanyContactList)
+                        {
+                            <p> @contact.EmailID</p>
+                        }
+
+                    </td>
+                    <td>
+
+
+                        @foreach (var contact in item.CompanyContactList)
+                        {
+                            <p> @contact.PhoneNumber</p>
+                        }
+
+                    </td>
+                    <td>
+
+
+                        @foreach (var Address in item.CompanyAddressList)
+                        {
+                            <p> @Address.Title| @Address.Address| @Address.City| @Address.SubLocation | @Address.ContactNumber   ~</p>
+                        }
+
+                    </td>
+                    <td>
+                        @foreach (var Event in item.CompanyEventHistory)
+                        {
+                            if (Event.EventTypeId == 7)
+                            {
+                                <p> @Event.Description </p>
+                            }
+
+                        }
+
+                    </td>
+                    <td>
+                        @foreach (var Event in item.CompanyEventHistory)
+                        {
+                            if (Event.EventTypeId == 1)
+                            {
+                                <p> @Event.Description </p>
+                            }
+
+                        }
+
+                    </td>
+                    <td>
+                        @item.Sector
+                    </td>
+                    <td>
+                        @item.DateGiven.ToString("dd MMM yyyy")
+                    </td>
+                    <td>
+                        @item.ResearchSource
+                    </td>
+                    <td>
+                        @foreach (var Stream in item.CompanyStreamList)
+                        {
+
+                            <p> @Stream.CoursesId - @Stream.StreamId </p>
+
+
+                        }
+
+                    </td>
+                    <td>
+                        @foreach (var pay in item.CompanyStreamList)
+                        {
+
+                            <p> @pay.PayPackageID </p>
+
+
+                        }
+
+                    </td>
+                    <td>
+                        @if (item.CallNoteList.Count > 0)
+                        {
+                            foreach (var call in item.CallNoteList)
+
+
+                            {
+
+                                <p> @call.ActivityDate.ToString("dd MMM yyyy")  |  @call.Description | @call.CreatedOn.ToString("dd MMM yyyy")</p>
+
+
+
+                            }
+                        }
+                    </td>
+                    <td>
+                        <p> @item.CreatedOn.ToString("dd MMM yyyy")
+                    </td>
+                    @*<td>
+                            <button type="button" style="background-color:@item.ColorCode" class="btn btn-sm"></button>
+                            @Html.DisplayFor(modelItem => item.CompanyName, new { @style = "color:red" })
+                        </td>*@
+                </tr>
+            }
+        </table>
+    </div>
+
+</div>
+<script>
+
+
+
+    $(document).ready(function () {
+
+        var User = '@User.Identity.GetUserName().ToUpper()';
+
+
+        if (User == "ADMIN@AE.IN") {
+            var buttonCommon = {
+                exportOptions: {
+                    format: {
+                        body: function (data, row, column, node) {
+                            return column === 5 ?
+                                data.replace(/[$,]/g, '') :
+                                data;
+                        }
+                    }
+                }
+            };
+            $(".table").dataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'csv', 'excel1'
+                ]
+                ,
+                    'columnDefs' : [
+                   //hide the 5th & 6th column
+                  { 'visible': false, 'targets': [4,5] }
+                ]
+            });
+
+        }
+
+        else {
+            $(".table").dataTable();
+        }
+
+
+    });
+</script>

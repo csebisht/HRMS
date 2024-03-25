@@ -1,0 +1,17 @@
+2022-04-12 00:05:41.7386 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:05:42.0032 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:05:45.8982 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:05:46.6138 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:05:45.6716 ERROR SPWrapper GetJobDescription Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:05:46.6138 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:05:53.0082 ERROR SPWrapper GetCompanyContacts Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:05:46.7973 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:05:46.6138 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:05:53.0082 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:05:46.7973 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:05:46.7973 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:05:51.3132 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:05:46.7973 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:08:56.4153 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:08:59.6991 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-12 00:09:09.8329 ERROR SPWrapper GetCompanyList Ex - A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The specified network name is no longer available.)

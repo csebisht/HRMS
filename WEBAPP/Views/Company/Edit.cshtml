@@ -1,0 +1,3074 @@
+﻿@model WEBAPP.Models.Company
+@using Microsoft.AspNet.Identity;
+@{
+    ViewBag.Title = "Edit";
+}
+<script>
+    $(document).ready(function () {
+        $(".CNtable").dataTable({
+            "bSort": false
+        });
+        getCompanyyear();
+        getHiringyear();
+        getyear();
+      
+
+    });
+
+
+    $(function () {
+        $("#ActivityDate").datepicker({ dateFormat: 'mm-dd-yy',changeMonth: true,
+      changeYear: true });
+        $("#DateGiven").datepicker({ dateFormat: 'mm-dd-yy',changeMonth: true,
+      changeYear: true });
+        $("#Anniversary").datepicker({ dateFormat: 'mm-dd-yy',changeMonth: true,
+      changeYear: true });
+        $("#DOB").datepicker({ dateFormat: 'mm-dd-yy',changeMonth: true,
+      changeYear: true });
+        $("#VisitDate").datepicker({ dateFormat: 'mm-dd-yy' ,changeMonth: true,
+      changeYear: true});
+
+
+
+
+    });
+</script>
+
+ 
+
+<style>
+    /*body {
+        padding: 10px;
+    }*/
+
+    #exTab1 .tab-content {
+        color: white;
+        background-color: #428bca;
+        padding: 5px 15px;
+    }
+
+    #exTab2 h3 {
+        color: white;
+        background-color: #428bca;
+        padding: 5px 15px;
+    }
+
+    /* remove border radius for the tab */
+
+    #exTab1 .nav-pills > li > a {
+        border-radius: 0;
+    }
+
+    /* change border radius for the tab , apply corners on top*/
+
+    #exTab3 .nav-pills > li > a {
+        border-radius: 4px 4px 0 0;
+    }
+
+    #exTab3 .tab-content {
+        color: white;
+        background-color: #428bca;
+        padding: 5px 15px;
+    }
+
+    .modal-dialog {
+        max-width: 95% !important;
+    }
+    .note-toolbar {
+        z-index: auto;
+    }
+</style>
+<script>
+
+
+
+
+    function fn_SaveStream() {
+        debugger;
+        var arr = new Array();
+        $('#tbl_stream tbody tr').each(function (i, tr) {
+            debugger;
+            arr[i] = {
+                Course: ($(tr).find("td:nth-child(1) select.Course")).val(),
+                Stream: ($(tr).find("td:nth-child(2) select.Stream")).val().toString(),
+                PayPackageID: ($(tr).find("td:nth-child(3) select.PayPackageID")).val(),
+            }
+
+        });
+
+        $('#t_JsonString').val(JSON.stringify(arr));
+    }
+
+
+    function GetStreambyCourse(input) {
+        debugger;
+        var stateId = $(input).val();
+
+        $.ajax
+            ({
+                url: '/Company/GetStreamFromCourse',
+                type: 'POST',
+                datatype: 'application/json',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    CourseId: stateId
+                }),
+                success: function (result) {
+                    $("#StreamId").html("");
+                    $.each($.parseJSON(result), function (i, val) {
+                        $("#StreamId").append($('<option></option>').val(val.StreamName).html(val.StreamName))
+                    })
+
+                },
+                error: function () {
+                    alert("Whooaaa! Something went wrong..")
+                },
+            });
+    };
+
+    function GetSublocationTab(input) {
+
+        var CityID = $(input).val();
+
+        $.ajax
+            ({
+                url: '/Company/GetSubLocation',
+                type: 'POST',
+                datatype: 'application/json',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    City: CityID
+                }),
+                success: function (result) {
+                    $("#CASubLocation").html("");
+                    console.log(result);
+                    $.each($.parseJSON(result), function (i, data) {
+                        $("#CASubLocation").append($('<option></option>').val(data.SubLocation).html(data.SubLocation))
+                    })
+
+                },
+                error: function () {
+                    alert("Whooaaa! Something went wrong..")
+                },
+            });
+    };
+
+
+    function GetSublocation(input) {
+        debugger;
+        var CityID = $(input).val();
+
+        $.ajax
+            ({
+                url: '/Company/GetSubLocation',
+                type: 'POST',
+                datatype: 'application/json',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    City: CityID
+                }),
+                success: function (result) {
+                    $("#CSubLocation").html("");
+                    console.log(result);
+                    $.each($.parseJSON(result), function (i, data) {
+                        $("#CSubLocation").append($('<option></option>').val(data.SubLocation).html(data.SubLocation))
+                    })
+
+                },
+                error: function () {
+                    alert("Whooaaa! Something went wrong..")
+                },
+            });
+    };
+
+
+    function GetStreambyappendCourse(input, i) {
+        debugger;
+
+        var stateId = $(input).val();
+
+        var id = "#Col" + i;
+        $.ajax
+            ({
+                url: '/Company/GetStreamFromCourse',
+                type: 'POST',
+                datatype: 'application/json',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    CourseId: stateId
+                }),
+                success: function (result) {
+                    $(id).html("");
+                    $.each($.parseJSON(result), function (i, city) {
+                        $(id).append($('<option></option>').val(city.StreamName).html(city.StreamName))
+                    })
+
+                },
+                error: function () {
+                    alert("Whooaaa! Something went wrong..")
+                },
+            });
+    }
+    function EditGetStreambyappendCourse(input, i) {
+        debugger;
+
+
+        var id = "#Col" + i;
+        $.ajax
+            ({
+                url: '/Company/GetStreamFromCourse',
+                type: 'POST',
+                datatype: 'application/json',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    CourseId: input
+                }),
+                success: function (result) {
+                    $(id).html("");
+
+
+                    $.each($.parseJSON(result), function (i, city) {
+                        $(id).append($('<option></option>').val(city.StreamName).html(city.StreamName))
+                    })
+
+
+                },
+                error: function () {
+                    alert("Whooaaa! Something went wrong..")
+                },
+            });
+    }
+    function AddRow() {
+        debugger;
+        var length = $("#tbl_stream tbody tr").length;
+        var itemm = $(".CourseId").html();
+
+        var row = $('<tr></tr>');
+        var s = $("<select id=\"selectId\" name=\"selectName\" name='' class='form-control Course'  onchange='GetStreambyappendCourse(this," + length + ")' />");
+
+        $(itemm).appendTo(s);
+        //col 1
+        var rowData = $('<td></td>').html(s);
+        row.append(rowData);
+
+        //col 2
+        rowData = $('<td></td>').html("<Select class='form-control multiple Stream'  name='Col" + length + "' multiple='multiple' id='Col" + length + "' />");
+        row.append(rowData);
+        //col 3
+        rowData = $('<td></td>').html(
+            "<select   id='Col1" + length + "' name='Col1" + length + "' class='form-control PayPackageID'>" + "<option value=''>  Select   </option>" +
+            "<option value='0-1'>0-1  </option>" + "<option value='1-2'>1-2  </option>" + "<option value='2-3'>2-3  </option>" + "<option value='3-4'>3-4  </option>" + "<option value='4-5'>4-5  </option>" + "<option value='5-6'>5-6  </option>" + "<option value='6-7'>6-7  </option>" + "<option value='7-8'>7-8  </option>"
+            + "<option value='8-9'>8-9  </option>"
+            + "<option value='9-10'>9-10  </option>"
+            + "<option value='10-15'>10-15  </option>"
+            + "<option value='15-20'>15-20  </option>"
+            + "<option value='20-30'>20-30  </option>"
+            + "<option value='30-40'>30-40  </option>"
+            + "<option value='40-50'>40-50  </option>"
+            + "</select>");
+
+
+        row.append(rowData);
+
+
+        $("#tbl_stream tbody").append(row);
+
+
+    }
+
+    function isValidDate(s) {
+        var bits = s.split('/');
+        var d = new Date(bits[2] + '/' + bits[1] + '/' + bits[0]);
+        return !!(d && (d.getMonth() + 1) == bits[1] && d.getDate() == Number(bits[0]));
+    };
+    function getContact(Id) {
+        debugger;
+        $.ajax({
+            url: "/Company/getContact",
+            data: { 'Id': Id },
+            success: function (data) {
+
+                console.log(data);
+                $("#ColorCode").val(data.ColorCode);
+                $("#CContactID").val(data.ContactID);
+                $("#MobileNumber").val(data.MobileNumber);
+                $("#ContactName").val(data.ContactName)
+                $("#Designation").val(data.Designation);
+                $("#CDescription").val(data.Description);
+
+                $("#EmailID").val(data.EmailID);
+                $("#PhoneNumber").val(data.PhoneNumber)
+
+                $("#DOB").val(data.DOB);
+
+
+                $("#CCAddress").val(data.Address);
+                $("#Anniversary").val(data.Anniversary);
+
+            }
+        });
+    };
+
+    function getCallNote(Id) {
+
+        $.ajax({
+            url: "/Company/getCallNote",
+            data: { 'Id': Id },
+            success: function (data) {
+                debugger;
+                $("#CallId").val(data.Id);
+                $("#Description").val(data.Description);
+                $("#CRemindMe").val(data.RemindMe);
+                if (data.Type == '5') {
+
+                    $("#ActivityDate").val('');
+                    $("#ActivityDate").removeAttr('required');
+                    $('#HideActivityDate').hide();
+
+                }
+                else if(data.Type=='6'){                   
+                        $('#HideReminderdiv').hide();
+                                       
+                }
+                else {
+                    $('#HideActivityDate').show();
+
+                    $("#ActivityDate").attr('required');
+                    $("#ActivityDate").val(data.t_ActivityDate);
+                }
+
+                $("#CallContactId").val(data.CallContactId);
+                $("#CType").val(data.Type);
+                $("#CStatus").val(data.Status);
+              
+            }
+        });
+    }
+    function StatusCheckbox(element) {
+        debugger;
+        if (element.checked) {
+
+            $("#hidEventDate").hide();
+            //$("#hidDescription").hide(); $("#hidEventContact").hide();
+
+        }
+        else {
+            $("#hidEventDate").show();
+            //$("#hidDescription").show(); $("#hidEventContact").show();
+        }
+
+    }
+
+    function EventDropDown(element) {
+
+
+        debugger;
+
+        $('#VisitorID').val();
+        if (element.value == '0') {
+
+            $("#hidEventDate").hide();
+            //$("#hidDescription").hide(); $("#hidEventContact").hide();
+        }
+        else {
+            $("#hidEventDate").show();
+            //$("#hidDescription").show(); $("#hidEventContact").show();
+        }
+
+    }
+
+    function StatusDropDown(element) {
+
+
+        debugger;
+
+        $('#VisitorID').val();
+        if (element.value == '0') {
+
+            //$("#hidVisitDate").hide(); $("#hidVisitDescription").hide();
+
+        }
+        else {
+            $("#hidVisitDate").show();
+            //$("#hidVisitDescription").show(); $("#hidVisitContact").show();
+        }
+
+    }
+
+    $(document).ready(function () {
+        $("#Status").prop("checked", true);
+        // $("#hidVisitDate").hide(); $("#hidVisitDescription").hide();
+        $("#hidVisitContact").show();
+        $("#hidEventDate").hide();
+        //$("#hidDescription").hide();
+        //$("#hidEventContact").hide();
+    })
+</script>
+<div>
+
+    <a class="btn tab btn-sm btn-secondary" style="color:white;display:none" data-toggle="modal" data-target="#exampleModalScrollable_@Model.Id"> <i class="fas fa-phone"></i> Calls</a>
+    <div class="modal fade" id="exampleModalScrollable_@Model.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Call Notes/ Follow Ups</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+
+
+                </div>
+
+                @*@using (Html.BeginForm("AddNotes", "Company", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {*@
+                @using (Ajax.BeginForm("AddNotes", "Company", new AjaxOptions { HttpMethod = "POST", LoadingElementId = "spinner", InsertionMode = InsertionMode.Replace, OnSuccess = "CnfSubmenumsgMOdel('exampleModalScrollable_" + @Model.Id + "','/Company/Edit?Id=" + @Model.Id + " ');", OnFailure = "Errmsg(data);" }, new { id = "CompanyForm", enctype = "multipart/form-data" }))
+                {
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead style="background-color:#20c997;color:white">
+                                <tr>
+
+                                    <th>
+                                        Title
+                                    </th>
+
+                                    <th>Contact Number</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var subitem in Model.CompanyAddressList)
+                                {
+                                    <tr>
+
+                                        <td>
+                                            @subitem.Title
+                                        </td>
+
+                                        <td>
+
+                                            @subitem.ContactNumber
+                                        </td>
+
+
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+
+                        <ul class="nav nav-tabs">
+                            <li>
+                                <a href="#All" data-toggle="tab" class="nav-link active">All</a>
+                            </li>
+                            <li>
+                                <a href="#Followup" data-toggle="tab" class="nav-link">Follow Up</a>
+                            </li>
+                            <li>
+                                <a href="#Coordination" data-toggle="tab" class="nav-link">Coordination</a>
+                            </li>
+                            <li>
+                                <a href="#Important" data-toggle="tab" class="nav-link">Important</a>
+                            </li>
+                            <li>
+                                <a href="#Positive" data-toggle="tab" class="nav-link">Positive</a>
+                            </li>
+                            @*<li>
+                                <a href="#Extra" data-toggle="tab" class="nav-link">Extra</a>
+                            </li>*@
+                        </ul>
+                        <div class="tab-content">
+                            <div id="All" class="tab-pane active">
+                                <br />
+                                <table class="table CNtable">
+                                    <thead style="background-color:#007bff;color:white">
+                                        <tr>
+                                            <th>
+                                                Date
+                                            </th>
+                                            <th>Description</th>
+                                            <th>Created On</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach (var subitem in Model.CallNoteList)
+                                        {
+                                            <tr>
+
+                                                <td>
+                                                    @if (subitem.Type == 5)
+                                                    {
+                                                        <label>--</label>
+                                                    }
+                                                    else
+                                                    {
+                                                        @subitem.ActivityDate.ToString("dd MMM yyyy")
+                                                    }
+
+                                                </td>
+                                                <td>
+                                                    @if (subitem.Type == 1)
+                                                    {
+                                                        <button class="btn btn-sm">Follow Ups</button> @subitem.Description
+
+                                                    }
+                                                    @if (subitem.Type == 2)
+                                                    {
+                                                        <button class="btn btn-sm ">Co-Ordination</button> @subitem.Description
+
+                                                    }
+                                                    @if (subitem.Type == 3)
+                                                    {
+                                                        <button class="btn btn-sm">Important</button> @subitem.Description
+
+                                                    }
+                                                    @if (subitem.Type == 4)
+                                                    {
+                                                        <button class="btn btn-sm">Positive</button> @subitem.Description
+
+                                                    }
+                                                    @if (subitem.Type == 5)
+                                                    {
+                                                        <button class="btn btn-sm">End</button> @subitem.Description
+
+                                                    }
+                                                    @if (subitem.Type == 6)
+                                                    {
+                                                        <button class="btn btn-sm">Reminder</button> @subitem.Description
+
+                                                    }
+                                                </td>
+                                                <td>
+                                                    @if (subitem.CreatedOn.ToString("yyyy-MM-dd") == "2010-01-01")
+                                                    {
+                                                        <label>--</label>
+                                                    }
+                                                    else
+                                                    {
+
+                                                        @subitem.CreatedOn.ToString("dd MMM yyyy")
+                                                    }
+
+                                                </td>
+                                                <td>
+                                                    @if (subitem.CreatedOn.ToString("yyyy-MM-dd") == DateTime.Now.Date.ToString("yyyy-MM-dd"))
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="getCallNote(`@subitem.Id`);">edit</a>
+                                                    }
+
+
+                                                    <a class="btn btn-sm" onclick="DeleteCommon(`@subitem.Id`,'Callnotes','Id');"> <i class="fa fa-trash" aria-hidden="true"></i>  </a>
+
+                                                    @if (subitem.Status == false)
+                                                    {
+                                                        <a class="btn btn-sm" onclick="UpdateStatus(`@subitem.Id`,'True');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="UpdateStatus(`@subitem.Id`,'False');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+
+
+                                                    @if (subitem.RemindMe == false)
+                                                    {
+                                                        <a class="btn btn-sm" onclick="AddReminder(`@subitem.Id`,'True');"> <i class="fa fa-bell" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="AddReminder(`@subitem.Id`,'False');"> <i class="fa fa-bell" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div id="Followup" class="tab-pane">
+                                <br />
+                                <table class="table CNtable datatable">
+                                    <thead style="background-color:#007bff;color:white">
+                                        <tr>
+                                            <th>
+                                                Date
+                                            </th>
+                                            <th>Description</th>
+                                            <th>Created On</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach (var subitem in Model.CallNoteList.Where(x => x.Type == 1))
+                                        {
+                                            <tr>
+
+                                                <td>
+                                                    @subitem.ActivityDate.ToString("dd MMM yyyy")
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-warning">Follow Ups</button>  @subitem.Description
+                                                </td>
+                                                <td>
+                                                    @subitem.CreatedOn.ToString("dd MMM yyyy")
+                                                </td>
+                                                <td>
+                                                    @if (subitem.CreatedOn.ToString("yyyy-MM-dd") == DateTime.Now.Date.ToString("yyyy-MM-dd"))
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="getCallNote(`@subitem.Id`);">edit</a>
+                                                    }
+                                                    <a class="btn btn-sm" onclick="DeleteCommon(`@subitem.Id`,'Callnotes','Id');"> <i class="fa fa-trash" aria-hidden="true"></i>  </a>
+
+                                                    @if (subitem.Status == false)
+                                                    {
+                                                        <a class="btn btn-sm" onclick="UpdateStatus(`@subitem.Id`,'True');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="UpdateStatus(`@subitem.Id`,'False');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    @if (subitem.RemindMe == false)
+                                                    {
+                                                        <a class="btn btn-sm" onclick="AddReminder(`@subitem.Id`,'True');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="AddReminder(`@subitem.Id`,'False');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                </td>
+
+                                            </tr>
+                                        }
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div id="Coordination" class="tab-pane">
+                                <br />
+                                <table class="table CNtable">
+                                    <thead style="background-color:#007bff;color:white">
+                                        <tr>
+                                            <th>
+                                                Date
+                                            </th>
+                                            <th>Description</th>
+                                            <th>Created On</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach (var subitem in Model.CallNoteList.Where(x => x.Type == 2))
+                                        {
+                                            <tr>
+
+                                                <td>
+                                                    @subitem.ActivityDate.ToString("dd MMM yyyy")
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-primary">Coordination</button>  @subitem.Description
+                                                </td>
+                                                <td>
+                                                    @subitem.CreatedOn.ToString("dd MMM yyyy")
+                                                </td>
+                                                <td>
+                                                    @if (subitem.CreatedOn.ToString("yyyy-MM-dd") == DateTime.Now.Date.ToString("yyyy-MM-dd"))
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="getCallNote(`@subitem.Id`);">edit</a>
+                                                    }
+                                                    <a class="btn btn-sm" onclick="DeleteCommon(`@subitem.Id`,'Callnotes','Id');"> <i class="fa fa-trash" aria-hidden="true"></i>  </a>
+
+
+                                                    @if (subitem.Status == false)
+                                                    {
+                                                        <a class="btn btn-sm" onclick="UpdateStatus(`@subitem.Id`,'True');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="UpdateStatus(`@subitem.Id`,'False');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    @if (subitem.RemindMe == false)
+                                                    {
+                                                        <a class="btn btn-sm" onclick="AddReminder(`@subitem.Id`,'True');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="AddReminder(`@subitem.Id`,'False');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                </td>
+
+                                            </tr>
+                                        }
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div id="Important" class="tab-pane">
+                                <br />
+                                <table class="table CNtable">
+                                    <thead style="background-color:#007bff;color:white">
+                                        <tr>
+                                            <th>
+                                                Date
+                                            </th>
+                                            <th>Description</th>
+                                            <th>Created On</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach (var subitem in Model.CallNoteList.Where(x => x.Type == 3))
+                                        {
+                                            <tr>
+
+                                                <td>
+                                                    @subitem.ActivityDate.ToString("dd MMM yyyy")
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-danger">Important</button>  @subitem.Description
+                                                </td>
+                                                <td>
+                                                    @subitem.CreatedOn.ToString("dd MMM yyyy")
+                                                </td>
+                                                <td>
+                                                    @if (subitem.CreatedOn.ToString("yyyy-MM-dd") == DateTime.Now.Date.ToString("yyyy-MM-dd"))
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="getCallNote(`@subitem.Id`);">edit</a>
+                                                    }
+                                                    <a class="btn btn-sm" onclick="DeleteCommon(`@subitem.Id`,'Callnotes','Id');"> <i class="fa fa-trash" aria-hidden="true"></i>  </a>
+                                                    @if (subitem.Status == false)
+                                                    {
+                                                        <a class="btn btn-sm" onclick="UpdateStatus(`@subitem.Id`,'True');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="UpdateStatus(`@subitem.Id`,'False');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    @if (subitem.RemindMe == false)
+                                                    {
+                                                        <a class="btn btn-sm" onclick="AddReminder(`@subitem.Id`,'True');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="AddReminder(`@subitem.Id`,'False');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                </td>
+
+                                            </tr>
+                                        }
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div id="Positive" class="tab-pane">
+                                <br />
+                                <table class="table CNtable">
+                                    <thead style="background-color:#007bff;color:white">
+                                        <tr>
+                                            <th>
+                                                Date
+                                            </th>
+                                            <th>Description</th>
+                                            <th>Created On</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach (var subitem in Model.CallNoteList.Where(x => x.Type == 4))
+                                        {
+                                            <tr>
+
+                                                <td>
+                                                    @subitem.ActivityDate.ToString("dd MMM yyyy")
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-success">Positive</button>  @subitem.Description
+                                                </td>
+                                                <td>
+                                                    @subitem.CreatedOn.ToString("dd MMM yyyy")
+                                                </td>
+                                                <td>
+                                                    @if (subitem.CreatedOn.ToString("yyyy-MM-dd") == DateTime.Now.Date.ToString("yyyy-MM-dd"))
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="getCallNote(`@subitem.Id`);">edit</a>
+                                                    }
+                                                    <a class="btn btn-sm" onclick="DeleteCommon(`@subitem.Id`,'Callnotes','Id');"> <i class="fa fa-trash" aria-hidden="true"></i>  </a>
+
+                                                    @if (subitem.Status == false)
+                                                    {
+                                                        <a class="btn btn-sm" onclick="UpdateStatus(`@subitem.Id`,'True');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="UpdateStatus(`@subitem.Id`,'False');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    @if (subitem.RemindMe == false)
+                                                    {
+                                                        <a class="btn btn-sm" onclick="AddReminder(`@subitem.Id`,'True');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <a class="btn btn-sm btn-success" onclick="AddReminder(`@subitem.Id`,'False');"> <i class="fa fa-check" aria-hidden="true"></i>  </a>
+
+                                                    }
+                                                </td>
+
+                                            </tr>
+                                        }
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            @*<div id="Extra" class="tab-pane">
+                                <br />
+                                <table class="table CNtable">
+                                    <thead style="background-color:#007bff;color:white">
+                                        <tr>
+                                            <th>
+                                                Call
+                                            </th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach (var subitem in Model.CompanyExtraCallNotes)
+                                        {
+                                            <tr>
+
+                                                <td>
+                                                    @subitem.Value
+                                                </td>
+
+
+
+                                            </tr>
+                                        }
+                                    </tbody>
+
+                                </table>
+                            </div>*@
+                        </div>
+                        @Html.AntiForgeryToken()
+
+                        <hr />
+                        <input type="hidden" name="CompanyID" value="@Model.Id" />
+                        <input type="hidden" id="CallId" name="CallId" />
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                        <br />
+                        <br />
+                        <div class="row">
+                            <div class="col">
+                                <label class="control-label">Description </label>
+
+                                <textarea name="Description" required class="form-control" id="Description" placeholder="Description">  </textarea>
+
+
+                            </div>
+                            <div class="col">
+                                <label class="control-label">ContactName </label>
+
+                                @Html.DropDownList("CallContactId", new SelectList(Model.CompanyContactList.Where(x => x.ColorCode.ToUpper() != "RED").Select(m => new { ContactID = m.ContactID, ContactName = m.ContactName + m.MobileNumber }), "ContactID", "ContactName"), new { @class = "form-control" })
+
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="col">
+                                    <label class="control-label">Type </label>
+
+                                    <select class="form-control" id="CType" onchange="HideActivityDate();" name="Type">
+                                        <option value="1">
+                                            Follow-UP
+                                        </option>
+                                        <option value="2">
+                                            Co-ordination
+                                        </option>
+                                        <option value="3">
+                                            Important
+                                        </option>
+                                        <option value="4">
+                                            Positive
+                                        </option>
+                                        <option value="5">
+                                            End
+                                        </option>
+                                        <option value="6">
+                                            Reminder
+                                        </option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col" id="HideActivityDate">
+                                <label class="control-label">Date </label>
+                                <input type="text" required name="ActivityDate" autocomplete="off" id="ActivityDate" placeholder="ActivityDate" class="form-control" />
+
+
+                            </div>
+
+
+                            <input type="hidden" id="CStatus" name="Status" />
+                            <input type="hidden" id="CRemindMe" name="RemindMe" />
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="submit" value="Save Changes" class="btn btn-primary" />
+                    </div>
+                }
+
+                <script>
+
+
+                    function HideActivityDate() {
+                     
+                        if ($('#CType').val() == 5) {
+                            $("#ActivityDate").removeAttr('required');
+
+                            $("#ActivityDate").val('');
+                            $('#HideActivityDate').hide();
+
+
+                        }
+                        else {
+                            $("#ActivityDate").attr('required');
+                            $('#HideActivityDate').show();
+                          
+                            
+                        }
+
+
+                    };
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+
+    <a class="btn btn-sm tab btn-secondary" style="color:white" data-toggle="modal" data-target="#ModalScrollable_Contacts_@Model.Id"><i class="fas fa-user"></i> Contacts</a>
+    <div class="modal fade" id="ModalScrollable_Contacts_@Model.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Contacts</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                @using (Ajax.BeginForm("AddContact", "Company", new AjaxOptions { HttpMethod = "POST", LoadingElementId = "spinner", InsertionMode = InsertionMode.Replace, OnSuccess = "CnfSubmenumsgMOdel('ModalScrollable_Contacts_" + @Model.Id + "','/Company/Edit?Id=" + @Model.Id + " ');", OnFailure = "Errmsg(data);" }, new { id = "CompanyForm", enctype = "multipart/form-data" }))
+                {
+                    @*@using (Html.BeginForm("AddContact", "Company", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {*@
+                    <div class="modal-body">
+
+                        <ul class="nav nav-tabs">
+
+
+                            <li>
+                                <a href="#CAll" data-toggle="tab" class="nav-link active">All</a>
+                            </li>
+
+                            <li>
+                                <a href="#CExtra" data-toggle="tab" class="nav-link">Extra</a>
+                            </li>
+
+
+                        </ul>
+
+
+
+
+                        <div class="tab-content">
+                            <div id="CAll" class="tab-pane active">
+
+                                <table class="table">
+                                    <thead style="background-color:#007bff;color:white">
+                                        <tr>
+
+                                            <th>
+                                                Name
+                                            </th>
+                                            <th>Mobile</th>
+                                            <th>Designation</th>
+
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>DOB</th>
+                                            <th>Anniversary</th>
+                                            <th>City</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach (var subitem in Model.CompanyContactList.Where(x=>x.ColorCode.ToUpper()!="RED").ToList())
+                                        {
+                                            <tr style="color:@subitem.ColorCode">
+
+                                                <td style="font-weight:bolder">@subitem.ContactName</td>
+                                                <td>@subitem.MobileNumber</td>
+                                                <td>@subitem.Designation</td>
+                                                <td>@subitem.EmailID</td>
+                                                <td>@subitem.PhoneNumber</td>
+                                                <td>@subitem.DOB</td>
+                                                <td>@subitem.Anniversary</td>
+                                                <td>@subitem.Address</td>
+                                                <td>
+                                                    <a class="btn btn-sm btn-success" onclick="getContact('@subitem.ContactID');">edit</a>
+                                                    <a class="btn btn-sm" onclick="DeleteCommon(`@subitem.ContactID`,'CompanyContacts','ContactID');"> <i class="fa fa-trash" aria-hidden="true"></i>  </a>
+
+                                                </td>
+
+                                            </tr>
+                                        }
+                                    </tbody>
+
+                                </table>
+
+
+                            </div>
+                            <div id="CExtra" class="tab-pane">
+
+                                <table class="table">
+                                    <thead style="background-color:#007bff;color:white">
+                                        <tr>
+
+                                       
+
+                                            <th>
+                                                Name
+                                            </th>
+                                            <th>Mobile</th>
+                                            <th>Designation</th>
+
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>DOB</th>
+                                            <th>Anniversary</th>
+                                            <th>City</th>
+                                            
+
+                                        </tr>
+
+
+                                       
+                                    </thead>
+                                    <tbody>
+
+
+                                        @if (Model.CompanyExtraContacts.Count == 0 && Model.CompanyContactList.Where(x=>x.ColorCode.ToUpper()=="RED").ToList().Count==0)
+                                        {
+                                            <tr>
+                                                <th>
+                                                    No Records Found!
+                                                </th>
+                                            </tr>
+                                        }
+
+                                        else
+                                        {
+                                             
+                                           
+                                             foreach (var subitem in Model.CompanyContactList.Where(x=>x.ColorCode.ToUpper()=="RED"))
+                                            {
+                                            <tr style="color:Red">
+
+                                        <td style="font-weight:bolder">@subitem.ContactName</td>
+                                        <td>@subitem.MobileNumber</td>
+                                        <td>@subitem.Designation</td>
+                                        <td>@subitem.EmailID</td>
+                                        <td>@subitem.PhoneNumber</td>
+                                        <td>@subitem.DOB</td>
+                                        <td>@subitem.Anniversary</td>
+                                        <td>@subitem.Address</td>
+
+                                            </tr>
+                                            }
+
+                                            foreach (var subitem in Model.CompanyExtraContacts)
+                                            {
+                                    <tr style="color:Red">
+
+                                        <th>
+                                            @subitem.Value
+
+                                        </th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+
+                                    </tr>
+                                            }
+                                        }
+
+
+
+
+                                    </tbody>
+
+                                </table>
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+                        @Html.AntiForgeryToken()
+
+                        <hr />
+                        <input type="hidden" id="CContactID" name="ContactID" />
+                        <input type="hidden" name="CompanyID" value="@Model.Id" />
+
+
+
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="control-label">Name </label>
+
+                                <input required type="text" id="ContactName" name="ContactName" class="form-control" />
+                            </div>
+                            <div class="col">
+                                <label class="control-label">Mobile Number </label>
+                                <input type="text" id="MobileNumber" name="MobileNumber" class="form-control" />
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            @*<div class="col">
+                                    <label class="control-label">Department </label>
+
+                                    <input type="text" id="Department" required name="Department" class="form-control" />
+                                </div>*@
+                            <div class="col">
+                                <label class="control-label">Remarks </label>
+                                <input type="text" id="CDescription" name="Description" class="form-control" />
+
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="control-label">Designation </label>
+
+                                <input type="text" id="Designation" name="Designation" class="form-control" />
+                            </div>
+                            <div class="col">
+                                <label class="control-label">Email </label>
+                                <input type="text" id="EmailID" name="EmailID" class="form-control" />
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="control-label">Phone Number </label>
+
+                                <input type="text" id="PhoneNumber" name="PhoneNumber" class="form-control" />
+                            </div>
+                            <div class="col">
+                                <label class="control-label">DOB </label>
+                                <input type="text" id="DOB" autocomplete="off" name="DOB" class="form-control" />
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="control-label">Anniversary </label>
+
+                                <input type="text" id="Anniversary" autocomplete="off" name="Anniversary" class="form-control" />
+                            </div>
+                            <div class="col">
+                                <label class="control-label">ColorCode </label>
+
+                                @Html.DropDownListFor(m => m.ColorCode, Model.ddlcolor, "select", new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="control-label">City </label>
+                                @Html.DropDownList("Address", Model.ddlCity, "select", new { @class = "form-control", @Id = "CCAddress" })
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="submit" value="Save Changes" class="btn btn-primary" />
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <a class="btn btn-sm tab btn-secondary" style="color: white; display: none" data-toggle="modal" data-target="#exampleModalScrollableJD_@Model.Id"> <i class="fas fa-user"></i> JD and PR</a>
+    <div class="modal fade" id="exampleModalScrollableJD_@Model.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">JD and PR</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                @using (Ajax.BeginForm("AddJD", "Company", new AjaxOptions { HttpMethod = "POST", LoadingElementId = "spinner", InsertionMode = InsertionMode.Replace, OnSuccess = "CnfSubmenumsgMOdel('exampleModalScrollableJD_" + @Model.Id + "','/Company/Edit?Id=" + @Model.Id + " ');", OnFailure = "Errmsg(data);" }, new { id = "CompanyForm", enctype = "multipart/form-data" }))
+                {
+                    @*@using (Html.BeginForm("AddJD", "Company", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {*@
+                    <div class="modal-body">
+
+                        <table class="table">
+                            <thead style="background-color:#007bff;color:white">
+                                <tr>
+
+                                    <th>
+                                        Batch
+                                    </th>
+                                    <th>Type</th>
+                                    <th>Converted</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var subitem in Model.JobDescriptionList)
+                                {
+                                    <tr>
+
+                                        <td>
+                                            @subitem.Year
+                                        </td>
+                                        <td>
+
+                                            @subitem.Type
+                                        </td>
+                                        <td>
+
+                                            @subitem.Title
+                                        </td>
+
+                                        <td>
+                                            <a class="btn btn-sm btn-success" onclick="getJDdata(@subitem.Id);">edit</a>
+                                            <a class="btn btn-sm" onclick="DeleteCommon(`@subitem.Id`,'JobDescription','Id');"> <i class="fa fa-trash" aria-hidden="true"></i>  </a>
+
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+
+
+                        @Html.AntiForgeryToken()
+
+                        <hr />
+                        <input type="hidden" name="CompanyID" value="@Model.Id" />
+                        <input type="hidden" id="JDId" name="Id" />
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="control-label">Converted </label>
+                                <select id="Title" required name="Title" onchange="HideCodeType();" class="form-control">
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                @*<input type="text" id="Title"  name="Title" class="form-control" />*@
+                            </div>
+                            <div class="col">
+                                <label class="control-label">Batch </label>
+                                <select name="jdYear" required id="jdYear" class="form-control"></select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col" id="HideCodeType">
+                                <label class="control-label">Type </label>
+
+                                <select id="JType" class="form-control" name="Type">
+                                    <option value="OCC">
+                                        OCC
+                                    </option>
+                                    <option value="OCCJ">
+                                        OCCJ
+                                    </option>
+                                    <option value="OCCS">
+                                        OCCS
+                                    </option>
+                                    <option value="OCCJF">
+                                        OCCJF
+                                    </option>
+                                    <option value="OFC">
+                                        OFC
+                                    </option>
+                                    <option value="OCCOT">
+                                        OCCOT
+                                    </option>
+                                    <option value="OCB">
+                                        OCB
+                                    </option>
+                                </select>
+
+                            </div>
+                            <div class="col">
+                                <label class="control-label">Description </label>
+
+                                <textarea class="form-control" id="jdDescription" name="jdDescription"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="submit" value="Save Changes" class="btn btn-primary" />
+                    </div>
+                }
+                <script>
+
+                    function HideCodeType() {
+
+                        if ($('#Title').val() == 'No') {
+
+                            $('#HideCodeType').hide();
+                        }
+                        else {
+                            $('#HideCodeType').show();
+                        }
+                    }
+
+                    function getyear() {
+                        $("#jdYear").html("");
+
+                        var year = new Date().getFullYear() + 2;
+                        for (i = year; i > 1990; i--) {
+                            $("#jdYear").append($('<option />').val(i).html(i));
+                        }
+                    }
+                    function getJDdata(id) {
+                        debugger;
+                        $.ajax({
+                            url: "/Company/EditJD",
+                            data: { 'id': id },
+                            success: function (data) {
+
+                                $("#JDId").val(data.Id);
+                                $("#CompanyID").val(data.CompanyID);
+                                if (data.Title == 'No') {
+                                    $('#HideCodeType').hide();
+                                }
+                                else {
+                                    $('#HideCodeType').show();
+                                }
+
+                                $("#Title").val(data.Title);
+                                $("#JType").val(data.Type);
+                                $("#jdYear").val(data.Year);
+                                $("#jdDescription").val(data.jdDescription);
+                                $('#jdDescription').summernote('code', data.jdDescription);
+                            }
+                        });
+                    }
+
+
+
+                </script>
+            </div>
+        </div>
+    </div>
+
+    @*<a class="btn btn-sm btn-secondary" style="color:white" data-toggle="modal" data-target="#exampleModalScrollablePastRecruit_@Model.Id" onclick="getRecurityear()"> <i class="fas fa-user"></i> Past Recruitments</a>
+        <div class="modal fade" id="exampleModalScrollablePastRecruit_@Model.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Past Recruitments</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    @using (Ajax.BeginForm("AddPastRecruitments", "Company", new AjaxOptions { HttpMethod = "POST", LoadingElementId = "spinner", InsertionMode = InsertionMode.Replace, OnSuccess = "CnfSubmenumsgMOdel('exampleModalScrollablePastRecruit_" + @Model.Id + "','/Company/Edit?Id=" + @Model.Id + " ');", OnFailure = "Errmsg(data);" }, new { id = "CompanyForm", enctype = "multipart/form-data" }))
+                    {
+
+                        <div class="modal-body">
+
+                            <table class="table">
+                                <thead style="background-color:#007bff;color:white">
+                                    <tr>
+
+                                        <th>
+                                            Batch
+                                        </th>
+                                        <th>Code</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @foreach (var subitem in Model.PastRecruitmentList)
+                                    {
+                                        <tr>
+
+                                            <td>
+                                                @subitem.RecuritYear
+                                            </td>
+                                            <td>@subitem.Code</td>
+                                            <td>
+                                                <a class="btn btn-sm btn-success" onclick="getPastRecruitmentdata(@subitem.Id);">edit</a>
+
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+
+                            </table>
+
+
+
+                            @Html.AntiForgeryToken()
+
+                            <hr />
+                            <input type="hidden" name="CompanyID" value="@Model.Id" />
+                            <input type="hidden" id="PRId" name="Id" />
+                            @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                            <div class="row">
+                                <div class="col">
+                                    <label class="control-label">Code </label>
+
+                                    <input type="text" id="Code" required name="Code" class="form-control" />
+                                </div>
+                                <div class="col">
+                                    <label class="control-label">Year </label>
+                                    <select name="RecuritYear" id="RecuritYear" class="form-control"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <input type="submit" value="Save Changes" class="btn btn-primary" />
+                        </div>
+                    }
+                    <script>
+                        function getPastRecruitmentdata(id) {
+                            debugger;
+                            $.ajax({
+                                url: "/Company/EditPastRecruitments",
+                                data: { 'Id': id },
+                                success: function (data) {
+
+                                    $("#PRId").val(data.Id);
+                                    $("#CompanyID").val(data.CompanyID);
+
+                                    $("#Code").val(data.Code);
+                                    $("#RecuritYear").val(data.RecuritYear);
+
+                                }
+                            });
+                        }
+                        function getRecurityear() {
+                            $("#RecuritYear").html("");
+                            for (i = new Date().getFullYear(); i > 1990; i--) {
+                                $("#RecuritYear").append($('<option />').val(i).html(i));
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>*@
+
+    <a class="btn btn-sm tab btn-secondary" style="color: white; display: none" data-toggle="modal" onclick="" data-target="#exampleModalScrollableHired_@Model.Id"> <i class="fas fa-user"></i> Hired</a>
+    <div class="modal fade" id="exampleModalScrollableHired_@Model.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Hired</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                @using (Ajax.BeginForm("AddHired", "Company", new AjaxOptions { HttpMethod = "POST", LoadingElementId = "spinner", InsertionMode = InsertionMode.Replace, OnSuccess = "CnfSubmenumsgMOdel('exampleModalScrollableHired_" + @Model.Id + "','/Company/Edit?Id=" + @Model.Id + " ');", OnFailure = "Errmsg(data);" }, new { id = "CompanyForm", enctype = "multipart/form-data" }))
+                {
+                    @*@using (Html.BeginForm("AddHired", "Company", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {*@
+                    <div class="modal-body">
+
+                        <table class="table">
+                            <thead style="background-color:#007bff;color:white">
+                                <tr>
+
+                                    <th>
+                                        Batch
+                                    </th>
+                                    <th>College Name</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var subitem in Model.PastHiringList)
+                                {
+                                    <tr>
+
+                                        <td>
+                                            @subitem.Hiringyear
+                                        </td>
+                                        <td>@subitem.CollegeCode</td>
+                                        <td>
+                                            <a class="btn btn-sm btn-success" onclick="getPastHiringdata(@subitem.Id);">edit</a>
+                                            <a class="btn btn-sm" onclick="DeleteCommon(`@subitem.Id`,'PastHiring','Id');"> <i class="fa fa-trash" aria-hidden="true"></i>  </a>
+
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+
+
+                        @Html.AntiForgeryToken()
+
+                        <hr />
+                        <input type="hidden" name="CompanyID" value="@Model.Id" />
+                        <input type="hidden" id="EHId" name="Id" />
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="control-label">College </label>
+
+                                @*@Html.DropDownListFor(model => model.CourseId, new SelectList(Model.objCollegeMasterList, "Name", "Name"), "  Select   ", new { @class = "form-control CourseId" })*@
+
+                              @Html.DropDownList("CollegeCode", Model.objCollegeMasterList, "Select", new { @class = "form-control" })
+
+                            </div>
+                            <div class="col">
+                                <label class="control-label">Batch </label>
+                                <select name="MultiHiringyear" id="Hiringyear" multiple="multiple" class="form-control"></select>
+                            </div>
+
+                            <div class="col">
+                                <label class="control-label">Remarks </label>
+                                <input name="Remarks" id="HRemarks" class="form-control" value="" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="submit" value="Save Changes" class="btn btn-primary" />
+                    </div>
+                }
+                <script>
+
+
+                    function getHiringyear() {
+                        $("#Hiringyear").html("");
+
+                        var futureyear = new Date().getFullYear() + 2;
+
+                        for (i = futureyear; i > 1990; i--) {
+                            $('#Hiringyear').append($('<option />').val(i).html(i));
+                        }
+                    }
+                    function getPastHiringdata(id) {
+                        debugger;
+                        $.ajax({
+                            url: "/Company/EditHired",
+                            data: { 'Id': id },
+                            success: function (data) {
+
+                                $("#EHId").val(data.Id);
+                                $("#CompanyID").val(data.CompanyID);
+
+                                $("#CollegeCode").val(data.CollegeCode);
+                                $("#HRemarks").val(data.Remarks);
+
+                                var values = data.Hiringyear;
+
+                                $.each(values.split(","), function (i, e) {
+                                    console.log(e);
+                                    $("#Hiringyear option[value='" + e + "']").prop("selected", true);
+                                });
+                                //$("#Hiringyear").val(data.Hiringyear);
+
+                            }
+                        });
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <a class="btn tab btn-sm btn-secondary" style="color: white; display: none" data-toggle="modal" onclick="" data-target="#exampleModalScrollableStatus_@Model.Id"> <i class="fas fa-user"></i> Status</a>
+    <div class="modal fade" id="exampleModalScrollableStatus_@Model.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Company Status</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                @using (Ajax.BeginForm("AddCompanyStatus", "Company", new AjaxOptions { HttpMethod = "POST", LoadingElementId = "spinner", InsertionMode = InsertionMode.Replace, OnSuccess = "CnfSubmenumsgMOdel('exampleModalScrollableStatus_" + @Model.Id + "','/Company/Edit?Id=" + @Model.Id + " ');", OnFailure = "Errmsg(data);" }, new { id = "CompanyForm", enctype = "multipart/form-data" }))
+                {
+                    @*@using (Html.BeginForm("AddCompanyStatus", "Company", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {*@
+                    <div class="modal-body">
+
+                        <table class="table">
+                            <thead style="background-color:#007bff;color:white">
+                                <tr>
+
+                                    <th>
+                                        Batch
+                                    </th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var subitem in Model.CompanyStatusList)
+                                {
+                                    <tr>
+
+                                        <td>
+                                            @subitem.CompanyYear
+                                        </td>
+                                        <td>@subitem.CompanyDescription</td>
+                                        <td>
+                                            <a class="btn btn-sm btn-success" onclick="fn_EditCompanyStatus(@subitem.Id);">edit</a>
+                                            <a class="btn btn-sm" onclick="DeleteCommon(`@subitem.Id`,'CompanyStatus','Id');"> <i class="fa fa-trash" aria-hidden="true"></i>  </a>
+
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+
+
+                        @Html.AntiForgeryToken()
+
+                        <hr />
+                        <input type="hidden" name="CompanyID" value="@Model.Id" />
+                        <input type="hidden" id="CSId" name="Id" />
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="control-label">Company Status </label>
+                                <textarea id="CompanyDescription" required name="CompanyDescription" class="form-control"></textarea>
+                            </div>
+                            <div class="col">
+                                <label class="control-label">Batch </label>
+                                <select name="CompanyYear" id="CompanyYear" class="form-control"></select>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="submit" value="Save Changes" class="btn btn-primary" />
+                    </div>
+                }
+                <script>
+                    function fn_EditCompanyStatus(id) {
+                        debugger;
+                        $.ajax({
+                            url: "/Company/EditCompanyStatus",
+                            data: { 'Id': id },
+                            success: function (data) {
+
+                                $("#CSId").val(data.Id);
+                                $("#CompanyID").val(data.CompanyID);
+
+                                $("#CompanyDescription").val(data.CompanyDescription);
+                                $("#CompanyYear").val(data.CompanyYear);
+
+                            }
+                        });
+                    }
+                    function getCompanyyear() {
+                        $("#CompanyYear").html("");
+
+                        var futureyear = new Date().getFullYear() + 2;
+                        for (i = futureyear; i > 1990; i--) {
+                            $('#CompanyYear').append($('<option />').val(i).html(i));
+
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+    <a class="btn tab btn-sm btn-secondary" style="color: white; display: none" data-toggle="modal" data-target="#exampleModalScrollableStream_@Model.Id"> <i class="fas fa-user"></i> Streams</a>
+    <div class="modal fade" id="exampleModalScrollableStream_@Model.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" style="height:500px" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Stream</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                @using (Ajax.BeginForm("AddCompanyStream", "Company", new AjaxOptions { HttpMethod = "POST", LoadingElementId = "spinner", InsertionMode = InsertionMode.Replace, OnSuccess = "CnfSubmenumsgMOdel('exampleModalScrollableStream_" + @Model.Id + "','/Company/Edit?Id=" + @Model.Id + " ');", OnFailure = "Errmsg(data);" }, new { id = "CompanyForm", enctype = "multipart/form-data" }))
+                {
+                  
+                    @Html.HiddenFor(m => m.t_JsonString)
+                    <div class="modal-body">
+
+                        <table class="table">
+                            <thead style="background-color:#007bff;color:white">
+                                <tr>
+
+                                    <th>
+                                        CourseName
+                                    </th>
+                                    <th>StreamName</th>
+                                    <th>Package</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var subitem in Model.CompanyStreamList)
+                                {
+                                    <tr>
+
+                                        <td>
+                                            @subitem.CourseName
+                                        </td>
+                                        <td>@subitem.StreamName</td>
+                                        <td>@subitem.PayPackageID    </td>
+                                        <td>
+                                            <a class="btn btn-sm btn-success" onclick="getCompanyStreamdata(@subitem.Id);">edit</a>
+                                            <a class="btn btn-sm" onclick="DeleteCommon(`@subitem.Id`,'CompanyStream','Id');"> <i class="fa fa-trash" aria-hidden="true"></i>  </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+
+
+                        @Html.AntiForgeryToken()
+
+                        <hr />
+                        <input type="hidden" name="CompanyID" value="@Model.Id" />
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+
+                        <table class="table" id="tbl_stream">
+                            <thead>
+                                <tr>
+                                    <th>Courses</th>
+                                    <th>Stream</th>
+                                    <th>
+                                        <a onclick="AddRow();" class="btn btn-success">Add</a>
+                                    </th>
+
+
+                                    <th hidden="hidden">
+                                        @Html.DropDownListFor(model => model.CourseId, new SelectList(Model.CourseDrp, "CourseName", "CourseName"), "  Select   ", new { @class = "form-control CourseId" })
+
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+
+                                @*@Html.DropDownListFor(model => model.StreamId, Enumerable.Empty<SelectListItem>(),"",new { @class = "form-control multiple",@multiple="multiple" })*@
+
+
+
+
+                            </tbody>
+                        </table>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="submit" value="Save Changes" onclick="fn_SaveStream()" class="btn btn-primary" />
+                    </div>
+                }
+                <script>
+
+
+
+
+
+
+                    function getCompanyStreamdata(id) {
+                        $("#tbl_stream tbody").empty();
+                        debugger;
+                        $.ajax({
+                            url: "/Company/EditgetCompanyStreamdata",
+                            data: { 'id': id },
+                            success: function (data) {
+
+                                console.log(data);
+                                var length = $("#tbl_stream tbody tr").length;
+                                var itemm = $(".CourseId").html();
+
+                                var row = $('<tr></tr>');
+                                var s = $("<select id=\"selectId" + length + "\" name=\"selectName\" name='' class='form-control Course'  onchange='GetStreambyappendCourse(this," + length + ")' />");
+
+                                $(itemm).appendTo(s);
+                                //col 1
+                                var rowData = $('<td></td>').html(s);
+                                row.append(rowData);
+
+                                //col 2
+                                rowData = $('<td></td>').html("<Select class='form-control multiple Stream'  name='Col" + length + "' multiple='multiple' id='Col" + length + "' />");
+                                row.append(rowData);
+
+                                //col 3
+                                rowData = $('<td></td>').html(
+                                    "<select   id='Col1" + length + "' ' name='Col1" + length + "' class='form-control PayPackageID'>" + "<option value=''>  Select   </option>" +
+                                    "<option value='0-1'>0-1  </option>" + "<option value='1-2'>1-2  </option>" + "<option value='2-3'>2-3  </option>" + "<option value='3-4'>3-4  </option>" + "<option value='4-5'>4-5  </option>" + "<option value='5-6'>5-6  </option>" + "<option value='6-7'>6-7  </option>" + "<option value='7-8'>7-8  </option>"
+                                    + "<option value='8-9'>8-9  </option>"
+                                    + "<option value='9-10'>9-10  </option>"
+                                    + "<option value='10-15'>10-15  </option>"
+                                    + "<option value='15-20'>15-20  </option>"
+                                    + "<option value='20-30'>20-30  </option>"
+                                    + "<option value='30-40'>30-40  </option>"
+                                    + "<option value='40-50'>40-50  </option>"
+
+                                    + "</select>");
+                                row.append(rowData);
+                                $("#tbl_stream tbody").append(row);
+                                // EditGetStreambyappendCourse(data.CourcesId, length);
+
+                                var id = "#Col" + length;
+                                $.ajax
+                                    ({
+                                        url: '/Company/GetStreamFromCourse',
+                                        type: 'POST',
+                                        datatype: 'application/json',
+                                        contentType: 'application/json',
+                                        data: JSON.stringify({
+                                            CourseId: data.CoursesId
+                                        }),
+                                        success: function (result) {
+                                            $(id).html("");
+
+
+                                            $.each($.parseJSON(result), function (i, city) {
+                                                $(id).append($('<option></option>').val(city.StreamName).html(city.StreamName))
+                                            })
+                                            $.each(values.split(","), function (i, e) {
+                                                console.log(e);
+                                                $(pid + " option[value='" + e + "']").prop("selected", true);
+
+                                            });
+
+
+                                        },
+                                        error: function () {
+                                            alert("Whooaaa! Something went wrong..")
+                                        },
+                                    });
+
+
+
+
+
+                                debugger;
+                                var values = data.StreamId;
+                                var pid = "#Col" + length;
+                                var selectId = "#selectId" + length;
+                                var payID = "#Col1" + length;
+
+                                $(selectId).val(data.CoursesId);
+                                $(payID).val(data.PayPackageID);
+
+                                //$.each(values.split(","), function (i, e) {
+                                //    console.log(e);
+                                //    $(pid + " option[value='" + e + "']").prop("selected", true);
+
+                                //     });
+
+
+
+                                //$("#Id").val(data.Id);
+                                //$("#CompanyID").val(data.CompanyID);
+
+                                //$("#Title").val(data.Title);
+                                //$("#Year").val(data.Year);
+                                //$("#jdDescription").val(data.jdDescription);
+                                //$('#jdDescription').summernote('code', data.jdDescription);
+                            }
+                        });
+                    }
+
+                    $(function () {
+                        $('#StreamId').multiselect({
+                            includeSelectAllOption: true
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <a class="btn tab btn-sm btn-secondary" style="color:white;display:none" data-toggle="modal" data-target="#exampleModalScrollableEvent_@Model.Id"> <i class="fas fa-user"></i> Event</a>
+    <div class="modal fade" id="exampleModalScrollableEvent_@Model.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Company Event</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                @using (Ajax.BeginForm("AddCompanyEvent", "Company", new AjaxOptions { HttpMethod = "POST", LoadingElementId = "spinner", InsertionMode = InsertionMode.Replace, OnSuccess = "CnfSubmenumsgMOdel('exampleModalScrollableEvent_" + @Model.Id + "','/Company/Edit?Id=" + @Model.Id + " ');", OnFailure = "Errmsg(data);" }, new { id = "CompanyForm", enctype = "multipart/form-data" }))
+                {
+                    @*@using (Html.BeginForm("AddCompanyEvent", "Company", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {*@
+                    <div class="modal-body">
+
+                        <table class="table">
+                            <thead style="background-color:#007bff;color:white">
+                                <tr>
+
+                                    <th>
+                                        Year
+                                    </th>
+                                    <th>Status</th>
+                                    <th>Event</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var subitem in Model.CompanyEventHistory.Where(x => x.EventTypeId != 7))
+                                {
+                                    <tr>
+
+                                        <td>
+                                            @subitem.EventDate
+                                        </td>
+                                        @if (subitem.Status == false)
+                                        {
+                                            <td> <a class="btn btn-sm btn-success">Done</a> </td>
+
+                                        }
+                                        else
+                                        {
+
+                                            <td><a class="btn btn-sm btn-warning">Required</a></td>
+                                        }
+
+                                        <td>
+
+                                            <label>
+                                                @Model.objCollegeEventList.Where(m => m.Value == @subitem.EventTypeId.ToString()).Select(m => m.Text).FirstOrDefault()
+
+                                            </label>
+
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-sm btn-success" onclick="fn_EditCompanyEvent(@subitem.Id);">edit</a>
+                                            <a class="btn btn-sm" onclick="DeleteCommon(`@subitem.Id`,'EventHistory','Id');"> <i class="fa fa-trash" aria-hidden="true"></i>  </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+
+
+                        @Html.AntiForgeryToken()
+
+                        <hr />
+                        <input type="hidden" name="CompanyID" value="@Model.Id" />
+                        <input type="hidden" id="CEId" name="Id" />
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="control-label"><b>Event</b> </label>
+                                @Html.DropDownList("EventTypeId", Model.objCollegeEventList, "", new { @class = "form-control", @id = "pEventTypeId", @onChange = "HideEventDate();" })
+
+
+                            </div>
+
+
+
+                            <div class="col" id="hidEventDate">
+                                <label class="control-label"><b>Date</b> </label>
+
+                                <input type="date" name="EventDate" id="EventDate" class="form-control" />
+                            </div>
+                            <div class="col" id="hidEventContact">
+                                <label class="control-label"><b>Contact </b></label>
+                                @Html.DropDownList("ContactId", new SelectList(Model.CompanyContactList.Select(m => new { ContactID = m.ContactID, ContactName = m.ContactName + m.MobileNumber }), "ContactID", "ContactName"), "  Others   ", new { @class = "form-control" })
+
+
+                            </div>
+                            <div class="col" id="hidDescription">
+                                <label class="control-label"><b>Description</b> </label>
+
+                                <textarea id="EventDescription" name="Description" class="form-control"></textarea>
+
+                            </div>
+
+                            <div class="col">
+                                <label class="control-label"><b>Event Status</b> </label>
+                                <select name="Status" id="EventStatus" onchange="EventDropDown(this)" class="form-control">
+                                    <option value="true">Required</option>
+                                    <option value="false">Done</option>
+                                </select>
+
+                            </div>
+
+                            <div class="col">
+
+
+
+                                @*<div class="form-group">
+                                        <div class="form-check checkbox">
+                                            <input class="form-check-input" type="checkbox" value="true" id="Status" onchange="StatusCheckbox(this)" name="Status" /> <b>Is Required?</b>
+                                        </div>
+                                    </div>*@
+                                @*<select id="Status" name="Status" class="form-control">
+                                    <option value="1">a</option>
+                                    <option value="0">b</option>
+
+                                    </select>*@
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="submit" value="Save Changes" class="btn btn-primary" />
+                    </div>
+                }
+                <script>
+
+
+
+                    function fn_EditCompanyEvent(id) {
+                        debugger;
+                        $.ajax({
+                            url: "/Company/EditCompanyEvent",
+                            data: { 'Id': id },
+                            success: function (data) {
+
+                                $("#CEId").val(data.Id);
+                                $("#CompanyID").val(data.CompanyID);
+                                $("#EventDescription").val(data.Description);
+                                $("#EventDate").val(data.t_EventDate); $("#ContactId").val(data.ContactId);
+                                $("#EventStatus").val(data.Status ? 'true' : 'false');
+                                $("#pEventTypeId").val(data.EventTypeId);
+
+
+                                if (data.Status) {
+
+                                    $("#Status").prop("checked", true);
+                                    //$("#hidEventDate").hide(); $("#hidDescription").hide(); $("#hidEventContact").hide();
+                                }
+                                else {
+                                    $("#Status").prop("checked", false);
+                                    $("#hidEventDate").show(); $("#hidDescription").show(); $("#hidEventContact").show();
+                                }
+                                //  $("#Status").val(data.Status);
+
+
+                            }
+                        });
+                    }
+
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+
+    <a class="btn tab btn-sm btn-secondary" style="color: white; display: none" data-toggle="modal" data-target="#exampleModalScrollableVisit_@Model.Id"> <i class="fas fa-user"></i> Visits</a>
+    <div class="modal fade" id="exampleModalScrollableVisit_@Model.Id" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Visit</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                @using (Ajax.BeginForm("AddCompanyEvent", "Company", new AjaxOptions { HttpMethod = "POST", LoadingElementId = "spinner", InsertionMode = InsertionMode.Replace, OnSuccess = "CnfSubmenumsgMOdel('exampleModalScrollableVisit_" + @Model.Id + "','/Company/Edit?Id=" + @Model.Id + " ');", OnFailure = "Errmsg(data);" }, new { id = "CompanyForm", enctype = "multipart/form-data" }))
+                {
+                    @*@using (Html.BeginForm("AddCompanyEvent", "Company", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {*@
+                    <div class="modal-body">
+
+                        <table class="table">
+                            <thead style="background-color:#007bff;color:white">
+                                <tr>
+
+                                    <th>
+                                        Date
+                                    </th>
+                                    <th>Status</th>
+                                    <th>Event</th>
+                                    <th>Visitor</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var subitem in Model.CompanyEventHistory.Where(x => x.EventTypeId == 7))
+                                {
+                                <tr>
+
+                                    <td>
+                                        @if (subitem.EventDate != null)
+                                        {
+                                            @subitem.EventDate.Value.ToString("dd MMM yyyy")
+                                        }
+
+                                        else
+                                        {
+                                            <label> -- </label>
+                                        }
+
+
+                                    </td>
+                                    @if (subitem.Status == false)
+                                    {
+
+                                        <td><a>Required</a></td>
+                                    }
+                                    else
+                                    {
+
+                                        <td> <a>Done</a> </td>
+                                    }
+
+                                    <td>
+
+                                        <label>
+                                            Visit
+
+                                        </label>
+
+                                    </td>
+
+                                    <td>@subitem.Visitor</td>
+                                    <td>
+                                        <a class="btn btn-sm btn-success" onclick="fn_EditCompanyVisit(@subitem.Id);">edit</a>
+                                        <a class="btn btn-sm" onclick="DeleteCommon(`@subitem.Id`,'CompanyVisit','Id');"> <i class="fa fa-trash" aria-hidden="true"></i>  </a>
+                                    </td>
+                                </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+
+
+                        @Html.AntiForgeryToken()
+
+                        <hr />
+                        <input type="hidden" name="CompanyID" value="@Model.Id" />
+                        <input type="hidden" id="CVId" name="Id" />
+                        <input type="hidden" id="EventTypeId" name="EventTypeId" value="7" />
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="control-label"><b>Visit Status</b> </label>
+                                <select name="Status" id="VisitStatus" onchange="StatusDropDown(this)" class="form-control">
+                                    <option value="false">Required</option>
+                                    <option value="true">Done</option>
+                                </select>
+
+                            </div>
+
+                            <div class="col">
+                                <label class="control-label"><b>Visitor</b> </label>
+                                <select name="Visitor" id="Visitor" class="form-control">
+                                    <option value="0">Others</option>
+                                    <option value="VKS">VKS</option>
+                                    <option value="HM">HM</option>
+                                </select>
+
+                            </div>
+
+
+                            <div class="col" id="hidVisitDate">
+                                <label class="control-label"><b>Date</b> </label>
+                                <input type="text" name="EventDate" id="VisitDate" class="form-control" />
+                            </div>
+
+                            <div class="col" id="hidVisitDescription">
+                                <label class="control-label"><b>Description</b> </label>
+
+                                <textarea id="VisitDescription" name="Description" class="form-control"></textarea>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="submit" value="Save Changes" class="btn btn-primary" />
+                    </div>
+                }
+                <script>
+                    function fn_EditCompanyVisit(id) {
+                        debugger;
+                        $.ajax({
+                            url: "/Company/EditCompanyEvent",
+                            data: { 'Id': id },
+                            success: function (data) {
+                                console.log(data);
+                                $("#CVId").val(data.Id);
+                                $("#CompanyID").val(data.CompanyID);
+                                $("#VisitDescription").val(data.Description);
+
+                                $("#VisitStatus").val(data.Status ? 'true' : 'false');
+
+                                $("#VisitDate").val(data.t_EventDate);
+                                $("#Visitor").val(data.Visitor);
+                                if (data.Status) {
+
+                                    $("#hidVisitDate").show(); $("#hidVisitDescription").show();
+
+                                }
+                                else {
+                                    $("#hidVisitDate").hide();
+                                    // $("#hidVisitDescription").hide();
+
+                                }
+                                //  $("#Status").val(data.Status);
+
+
+                            }
+                        });
+                    }
+
+                </script>
+            </div>
+        </div>
+    </div>
+    <a class="btn tab btn-sm btn-secondary" style="color:white;" data-toggle="modal" data-target="#exampleModalScrollableAddress_@Model.Id"> <i class="fas fa-user"></i> Address</a>
+    <div class="modal fade" id="exampleModalScrollableAddress_@Model.Id"  role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Address</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                @using (Ajax.BeginForm("SaveCompanyAddress", "Company", new AjaxOptions { HttpMethod = "POST", LoadingElementId = "spinner", InsertionMode = InsertionMode.Replace, OnSuccess = "CnfSubmenumsgMOdel('exampleModalScrollableAddress_" + @Model.Id + "','/Company/Edit?Id=" + @Model.Id + " ');", OnFailure = "Errmsg(data);" }, new { id = "CompanyForm", enctype = "multipart/form-data" }))
+                {
+                    @*@using (Html.BeginForm("AddCompanyEvent", "Company", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {*@
+                    <div class="modal-body">
+
+                        <table class="table">
+                            <thead style="background-color:#007bff;color:white">
+                                <tr>
+
+                                    <th>
+                                        Title
+                                    </th>
+                                    <th>City</th>
+                                    <th>SubLocation</th>
+                                    <th>Address</th>
+                                    <th>Contact Number</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var subitem in Model.CompanyAddressList)
+                                {
+                                    <tr>
+
+                                        <td>
+                                            @subitem.Title
+                                        </td>
+                                        <td>@subitem.City</td>
+                                        <td>@subitem.SubLocation</td>
+                                        <td>@subitem.Address</td>
+                                        <td>
+
+                                            @subitem.ContactNumber
+                                        </td>
+
+                                        <td>
+                                            <a class="btn btn-sm btn-success" onclick="fn_EditCompanyAddress(@subitem.Id);">edit</a>
+                                            <a class="btn btn-sm" onclick="DeleteCommon(`@subitem.Id`,'CompanyAddress','Id');"> <i class="fa fa-trash" aria-hidden="true"></i>  </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+
+
+
+                        @Html.AntiForgeryToken()
+
+                        <hr />
+                        <input type="hidden" name="CompanyID" value="@Model.Id" />
+                        <input type="hidden" id="CAId" name="Id" />
+                        <input type="hidden" id="CAIsActive" name="IsActive" value="true" />
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="control-label"><b>Title</b> </label>
+                                <select class="form-control" id="CATitle" name="Title">
+                                    <option value="Corporate Office">Corporate Office</option>
+                                    <option value="Regional Office">Regional Office</option>
+                                    <option value="Plant">Plant 1</option>
+                                    <option value="Plant2">Plant 2</option>
+                                    <option value="Plant2">Plant 3</option>
+                                    <option value="Sales Office"> Sales Office</option>
+                                    <option value="Branch">Branch Office</option>
+                                    <option value="Head Office">Head Office</option>
+                                    <option value="Registered Office">Registered Office</option>
+                                    <option value="Manufacturing Unit">Manufacturing Unit</option>
+                                    <option value="Others">Others</option>
+
+
+
+
+                                </select>
+                                @*<input type="text" id="CATitle" class="form-control" name="Title" />*@
+                            </div>
+
+                            <div class="col">
+                                <label class="control-label"><b>Address</b> </label>
+                                <textarea id="CAAddress" name="Address" class="form-control">  </textarea>
+                            </div>
+
+
+                            <div class="col">
+                                <label class="control-label"><b>City   </b> </label> <br />
+                                @Html.DropDownList("City", Model.ddlCity, "select  city  ", new { @class = "form-control select2", @required = "required", @onchange = "GetSublocationTab(this);" })
+                            </div>
+
+                            <div class="col">
+                                <label class="control-label"><b>SubLocation</b> </label>
+                                @*<select class="form-control" name="SubLocation" id="CASubLocation"></select>*@
+                              
+
+                                @*@Html.DropDownListFor(model => model.SubLocation, Model.ddlSubLocation, "Select Sub Location", new { @class = "form-control select2", @required = "required"})*@
+
+
+                                @Html.DropDownList("SubLocation", Model.ddlSubLocation, "select Sublocation", new { @class = "form-control select2", @id = "CASubLocation" })
+
+
+
+                            </div>
+
+                            <div class="col">
+                                <label class="control-label"><b>ContactNumber</b> </label>
+                                <textarea id="CAContactNumber" name="ContactNumber" class="form-control">  </textarea>
+
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="submit" value="Save Changes" class="btn btn-primary" />
+                    </div>
+
+
+
+
+                }
+                <script>
+                    function fn_EditCompanyVisit(id) {
+                        debugger;
+                        $.ajax({
+                            url: "/Company/EditCompanyEvent",
+                            data: { 'Id': id },
+                            success: function (data) {
+                                console.log(data);
+                                $("#CVId").val(data.Id);
+                                $("#CompanyID").val(data.CompanyID);
+                                $("#VisitDescription").val(data.Description);
+
+                                $("#VisitStatus").val(data.Status ? 'true' : 'false');
+
+                                $("#VisitDate").val(data.t_EventDate);
+                                $("#Visitor").val(data.Visitor);
+                                if (data.Status) {
+
+                                    $("#hidVisitDate").show(); $("#hidVisitDescription").show();
+
+                                }
+                                else {
+                                    $("#hidVisitDate").hide();
+                                    //$("#hidVisitDescription").hide();
+
+                                }
+                                //  $("#Status").val(data.Status);
+
+
+                            }
+                        });
+                    }
+
+                </script>
+
+                <script>
+                    function fn_EditCompanyAddress(id) {
+                        debugger;
+                        $.ajax({
+                            url: "/Company/EditCompanyAddress",
+                            data: { 'Id': id },
+                            success: function (data) {
+                                console.log(data);
+                                $("#CAId").val(data.Id);
+                                $("#CompanyID").val(data.CompanyID);
+                                $("#CATitle").val(data.Title);
+                                $("#CAAddress").text(data.Address);
+                                $("#City").val(data.City);
+                                $("#CASubLocation").val(data.SubLocation);
+                                $("#CAContactNumber").val(data.ContactNumber);
+
+
+
+                                if (data.Status) {
+
+                                    $("#hidVisitDate").show(); $("#hidVisitDescription").show();
+
+                                }
+                                else {
+                                    $("#hidVisitDate").hide(); $("#hidVisitDescription").hide();
+
+                                }
+                                //  $("#Status").val(data.Status);
+
+
+                            }
+                        });
+                    }
+
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+@using (Ajax.BeginForm("Edit", "Company", new AjaxOptions { HttpMethod = "POST", LoadingElementId = "spinner", InsertionMode = InsertionMode.Replace, OnSuccess = "CnfSubmenumsg(" + @Model.Id + ",'/Company/Edit?Id=" + @Model.Id + " ');", OnFailure = "" }, new { id = "CompanyForm", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <br />
+
+
+
+        <div id="exTab2" class="container">
+
+
+            @*<li>
+                    <a href="#2" data-toggle="tab" class="nav-link">Location <i class="fas fa-map-marker-alt"></i></a>
+                </li>*@
+            @*<li>
+                    <a href="#3" data-toggle="tab" class="nav-link">Other</a>
+                </li>*@
+
+
+
+            <div id="1">
+                @Html.HiddenFor(model => model.Id)
+
+                <div class="row">
+                    <div class="col">
+                        <label class="control-label"> Company Name</label>
+
+                        @if (User.Identity.GetUserName().ToUpper() == "ADMIN@AE.IN")
+                        {
+                            @Html.EditorFor(model => model.CompanyName, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+
+                        }
+                        else
+                        {
+                            @Html.EditorFor(model => model.CompanyName, new { htmlAttributes = new { @class = "form-control", @required = "required" ,@readonly="readonly"} })
+
+                        }
+
+
+
+
+                        @Html.ValidationMessageFor(model => model.CompanyName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col">
+                        <label class="control-label">Color Code </label>
+                        @Html.DropDownListFor(m => m.ColorCode, Model.ddlcolor, "select", new { @class = "form-control" })
+                        @*@Html.EditorFor(model => model.ColorCode, new { htmlAttributes = new { @class = "form-control" } })*@
+                        @Html.ValidationMessageFor(model => model.ColorCode, "", new { @class = "text-danger" })
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col">
+                        <label class="control-label">MTC/STC</label>
+                        @Html.EditorFor(model => model.MTCorSTC, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.MTCorSTC, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col">
+                        <label class="control-label">Accept Gift</label>
+                        @Html.EditorFor(model => model.Address1, new { htmlAttributes = new { @class = "form-control" } })
+
+                    </div>
+                </div>
+                @*<div class="row">
+                        <div class="col">
+                            <label class="control-label">Address </label>
+
+                            @Html.EditorFor(model => model.Address1, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+
+                        </div>
+
+                    </div>*@
+                <div class="row">
+                    <div class="col">
+                        @*<label class="control-label">City </label>
+                            @Html.DropDownList("City", Model.ddlCity, "select", new { @class = "form-control", @required = "required",@onChange="GetSublocation(this);" })*@
+                        @*@Html.EditorFor(model => model.City, new { htmlAttributes = new { @Id = "", @class = "form-control", @required = "required" } })*@
+                        @*@Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })*@
+                    </div>
+                    @*<div class="col">
+                            <label class="control-label">Sub Location </label>
+                            @Html.DropDownList("SubLocation", Model.ddlSubLocation, "select", new { @class = "form-control", @required = "required",@id="CSubLocation" })
+
+
+                        </div>*@
+                </div>
+
+
+
+
+                @Html.HiddenFor(m => m.CreatedBy)
+                @Html.HiddenFor(m => m.CreatedOn)
+                @Html.HiddenFor(m => m.IsDeleted)
+                <div class="row">
+                    @*<div class="col">
+                            <label class="control-label">Contact Number</label>
+
+                            @Html.EditorFor(model => model.ContactNumber, new { htmlAttributes = new { @class = "form-control", @required = "required", @pattern = "[0-9]{10}", @type = "tel", @maxlength = "10", @minlength = 10 } })
+                            @Html.ValidationMessageFor(model => model.ContactNumber, "", new { @class = "text-danger" })
+                        </div>*@
+                    @*<div class="col">
+                            <label class="control-label">Past Recruitments </label>
+                            @Html.EditorFor(model => model.PastRecruitments, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.PastRecruitments, "", new { @class = "text-danger" })
+                        </div>*@
+
+                </div>
+                <div class="row">
+                    @*<div class="col">
+                            <label class="control-label">Guest Lecture</label>
+
+                            @Html.EditorFor(model => model.GuestLecture, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.GuestLecture, "", new { @class = "text-danger" })
+                        </div>*@
+                    @*<div class="col">
+                            <label class="control-label">Advisory Board</label>
+                            @Html.EditorFor(model => model.AdvisoryBoard, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.AdvisoryBoard, "", new { @class = "text-danger" })
+                        </div>*@
+                </div>
+
+                <div class="row">
+                    
+                    @*<div class="col">
+                            <label class="control-label">Plant/Reg.Office</label>
+                            @Html.EditorFor(model => model.PlantorRegdOffice, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.PlantorRegdOffice, "", new { @class = "text-danger" })
+                        </div>*@
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label class="control-label">Transferred From</label>
+
+                        @Html.EditorFor(model => model.TransferredFrom, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.TransferredFrom, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col">
+                        <label class="control-label">Sector</label>
+                       
+                        @Html.DropDownListFor(model => model.Sector, Model.ddlSector, "Select Sector", new { @class = "form-control select2", @required = "required" })
+                        @Html.ValidationMessageFor(model => model.Sector, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label class="control-label">Date Given</label>
+
+                        @*@Html.EditorFor(model => model.DateGiven, new { htmlAttributes = new { @class = "form-control" } })*@
+                        <input type="text" value="@Model.DateGiven.ToString("dd MMM yyyy")" name="DateGiven" id="DateGiven" autocomplete="off" required class="form-control" />
+                        @Html.ValidationMessageFor(model => model.DateGiven, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col">
+                        <label class="control-label">Research Source</label>
+                        @Html.EditorFor(model => model.ResearchSource, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                        @Html.ValidationMessageFor(model => model.ResearchSource, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="row">
+                    @*<div class="col">
+            <label class="control-label">Stream Required</label>
+
+            @Html.EditorFor(model => model.StreamRequired, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.StreamRequired, "", new { @class = "text-danger" })
+        </div>*@
+                    <div class="col">
+                        <label class="control-label">Hiring Area</label>
+                        @Html.DropDownList("HiringArea", Model.ddlCity, "select", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.HiringArea, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col">
+                        <label class="control-label">Alloted To</label>
+
+                        @if (User.Identity.GetUserName().ToUpper() == "ADMIN@AE.IN")
+                        {
+                            @Html.EditorFor(model => model.AllotedTo, new { htmlAttributes = new { @class = "form-control" } })
+                        }
+                        else
+                        {
+                            @Html.EditorFor(model => model.AllotedTo, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+
+                        }
+
+
+                        @Html.ValidationMessageFor(model => model.AllotedTo, "", new { @class = "text-danger" })
+                    </div>
+                   
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col">
+                        <label class="control-label">Remarks</label>
+                        @Html.TextAreaFor(model => model.Remarks, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Remarks, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                        @Html.DropDownList("HiringArea", Model.ddlCity, "select", new { @class = "form-control" })
+                        <label class="control-label">Third Party</label>
+                        @*@Html.DropDownListFor(model => model.ThirdParty, Model.thirdparty, "Select third party", new { @class = "form-control", @required = "required" })*@
+
+                        @*@Html.EditorFor(model => model.ThirdParty, new { htmlAttributes = new { @class = "form-control" } })*@
+                        @Html.DropDownListFor(m => m.ThirdParty, Model.ddlthirdparty, "select", new { @class = "form-control" })
+                      
+                       
+
+                        @Html.ValidationMessageFor(model => model.ThirdParty, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col">
+                        <label class="control-label">Summer Training</label>
+
+                        @Html.EditorFor(model => model.SummerTraining, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.SummerTraining, "", new { @class = "text-danger" })
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <label class="control-label">Summary</label>
+                        @Html.TextAreaFor(model => model.Summary, new { htmlAttributes = new { @class = "form-control", @id = "SummaryBox" } })
+                        @Html.ValidationMessageFor(model => model.Summary, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label class="control-label">Is Active</label>
+                        @Html.EditorFor(model => model.IsActive)
+                        @Html.ValidationMessageFor(model => model.IsActive, "", new { @class = "text-danger" })
+                    </div>
+
+                </div>
+
+            </div>
+
+            @*<div class="tab-pane" id="2">
+
+
+
+
+                </div>
+                <div class="tab-pane " id="3">
+
+
+
+
+
+                </div>*@
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <input name="Submit" type="submit" value="Save" class="btn btn-xs btn-success" />
+
+
+                @if (User.Identity.GetUserName().ToUpper() == "ADMIN@AE.IN")
+                {
+
+                    if (Model.IsDeleted == true)
+                    {
+                        <input name="Submit" type="submit" value="Restore" class="btn btn-xs btn-primary" style="float:right" />
+
+                    }
+                    else
+                    {
+                        <input name="Submit" type="submit" value="Delete" class="btn btn-xs btn-danger" style="float:right" />
+
+                    }
+
+
+                    @*@Html.ActionLink("Back to List", "CompanyList","",new {@class="btn btn-xs btn-success" })*@
+                }
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+}
+
+<script>
+    function DeleteCommon(Id, TableName,Field) {
+        var bool = confirm("Are you sure?");
+        if (bool)
+        {
+
+             $.ajax
+            ({
+                url: '/Company/DeleteCommon',
+                type: 'POST',
+                datatype: 'application/json',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    Id: Id,
+                    TableName: TableName,
+                    Field:Field
+                }),
+                success: function (result) {
+                    if (TableName == 'Callnotes') {
+                     CnfSubmenumsgMOdel('exampleModalScrollable_@Model.Id','/Company/Edit?Id=@Model.Id');
+
+                    }
+                    if (TableName=='CompanyContacts') {
+                     CnfSubmenumsgMOdel('ModalScrollable_Contacts_@Model.Id','/Company/Edit?Id=@Model.Id');
+
+                    }
+                    if (TableName == 'JobDescription') {
+                     CnfSubmenumsgMOdel('exampleModalScrollableJD_@Model.Id','/Company/Edit?Id=@Model.Id');
+
+                    }
+                     if (TableName == 'PastHiring') {
+                     CnfSubmenumsgMOdel('exampleModalScrollableHired_@Model.Id','/Company/Edit?Id=@Model.Id');
+
+                    }
+                     if (TableName == 'CompanyStatus') {
+                     CnfSubmenumsgMOdel('exampleModalScrollableStatus_@Model.Id','/Company/Edit?Id=@Model.Id');
+
+                    }
+
+                    if (TableName == 'CompanyStream') {
+                     CnfSubmenumsgMOdel('exampleModalScrollableStream_@Model.Id','/Company/Edit?Id=@Model.Id');
+
+                    }
+                    if (TableName == 'EventHistory') {
+                     CnfSubmenumsgMOdel('exampleModalScrollableEvent_@Model.Id','/Company/Edit?Id=@Model.Id');
+
+                    }
+                     if (TableName == 'CompanyVisit') {
+                     CnfSubmenumsgMOdel('exampleModalScrollableVisit_@Model.Id','/Company/Edit?Id=@Model.Id');
+
+                    }
+
+                    if (TableName == 'CompanyAddress') {
+                     CnfSubmenumsgMOdel('exampleModalScrollableAddress_@Model.Id','/Company/Edit?Id=@Model.Id');
+
+                    }
+
+
+                },
+                error: function () {
+                    alert("Whooaaa! Something went wrong..")
+                },
+            });
+        };
+
+
+
+    }
+
+
+    function UpdateStatus(Id, Status) {
+        var bool = confirm("Update Status?");
+        if (bool)
+        {
+
+             $.ajax
+            ({
+                url: '/Company/UpdateStatus',
+                type: 'POST',
+                datatype: 'application/json',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    Id: Id,
+                    Status: Status
+                }),
+                success: function (result) {
+
+                     CnfSubmenumsgMOdel('exampleModalScrollable_@Model.Id','/Company/Edit?Id=@Model.Id');
+
+
+
+                },
+                error: function () {
+                    alert("Whooaaa! Something went wrong..")
+                },
+            });
+        };
+
+
+
+    }
+
+
+
+    function AddReminder(Id, Status) {
+        var bool = confirm("Add reminder?");
+        if (bool)
+        {
+
+             $.ajax
+            ({
+                url: '/Company/RemindMe',
+                type: 'POST',
+                datatype: 'application/json',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    Id: Id,
+                    Status: Status
+                }),
+                success: function (result) {
+
+                     CnfSubmenumsgMOdel('exampleModalScrollable_@Model.Id','/Company/Edit?Id=@Model.Id');
+
+
+
+                },
+                error: function () {
+                    alert("Whooaaa! Something went wrong..")
+                },
+            });
+        };
+
+
+
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        // $("#table1").dataTable();
+       
+
+        $('#SummaryBox').summernote({
+            height: 200,                 // set editor height
+            minHeight: null,             // set minimum height of editor
+            maxHeight: null,             // set maximum height of editor
+            // focus: true,
+            toolbar: [
+                // [groupName, [list of button]]
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['strikethrough', 'superscript', 'subscript']],
+                ['fontsize', ['8', '9', '10', '11', '12', '14', '18', '24', '36', '48' , '64', '82', '150']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']]
+            ]// set focus to editable area after initializing summernote                // set focus to editable area after initializing summernote
+        });
+        $('#Remarks').summernote({
+            height: 200,                 // set editor height
+            minHeight: null,             // set minimum height of editor
+            maxHeight: null,             // set maximum height of editor
+            // focus: true,
+            toolbar: [
+                // [groupName, [list of button]]
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['strikethrough', 'superscript', 'subscript']],
+                ['fontsize', ['fontsize']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']]
+            ]// set focus to editable area after initializing summernote                // set focus to editable area after initializing summernote
+        });
+       
+         //$('#Remarks').val(Dataji);
+
+
+
+        $('#jdDescription').summernote({
+            height: 200,                 // set editor height
+            minHeight: null,             // set minimum height of editor
+            maxHeight: null,             // set maximum height of editor
+            // focus: true,
+            toolbar: [
+                // [groupName, [list of button]]
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['strikethrough', 'superscript', 'subscript']],
+                ['fontsize', ['fontsize']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']]
+            ]// set focus to editable area after initializing summernote                // set focus to editable area after initializing summernote
+        });
+    });
+    var Data = $('#Summary').val();
+    $('#Summary').summernote('code', Data);
+     var Dataji = $('#Remarks').val();
+        $('#Remarks').summernote('code', Dataji);
+
+
+    
+
+     $('.select2').select2();
+   // $('.table').datatable();
+</script>
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+
+

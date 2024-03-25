@@ -1,0 +1,78 @@
+﻿@model IEnumerable<WEBAPP.Models.Sublocation>
+    @using WEBAPP.DAL;
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+<script>
+
+    function getSublocation(Id) {
+
+        $.ajax({
+            url: "/Company/getSublocationForEdit",
+            data: { 'Id': Id },
+            success: function (data) {
+
+                $("#Id").val(data.Id);
+                $("#CityId").val(data.CityId);
+                $("#SubLocation").val(data.SubLocation);
+
+
+            }
+        });
+    }
+
+</script>
+
+
+@using (Html.BeginForm("SaveSublocation", "Company", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form", role = "form" }))
+{
+
+
+<div class="row">
+
+    <div class="col-3">
+        @Html.DropDownList("CityId", new SelectList(DataMapper.MapCity(SPWrapper.GetCity()),"Id","City"), "select", new { @class = "form-control", @Id = "CityId" ,@required="required"})     
+        <input type="hidden" name="Id" id="Id" />
+    </div>
+    <div class="col-3">
+        <input type="text" required class="form-control text-box" placeholder="Sub Location" id="SubLocation" name="SubLocation" />      
+    </div>
+    <div>
+        <input type="submit" class="btn btn-sm btn-primary" value="Save SubLocation" />
+    </div>
+
+</div>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            City
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubLocation)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+              
+                @DataMapper.MapCity(SPWrapper.GetCity()).Find(x=>x.Id==item.CityId).City
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubLocation)
+            </td>
+            <td>
+                <a onclick="getSublocation(`@item.Id`);"> <span class="fas fa-edit">edit</span></a>
+               
+            </td>
+        </tr>
+    }
+
+</table>

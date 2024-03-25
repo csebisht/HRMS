@@ -1,0 +1,1 @@
+2020-02-20 22:14:24.2958 ERROR SPWrapper SaveCourse Ex - Procedure or function 'sp_SaveCourse' expects parameter '@CourseName', which was not supplied.

@@ -1,0 +1,8 @@
+2020-07-03 13:55:28.6806 ERROR SPWrapper SaveOTP Ex - Incorrect syntax near '00'.
+2020-07-03 13:57:11.3899 ERROR SPWrapper SaveOTP Ex - Incorrect syntax near '00'.
+2020-07-03 13:57:45.6628 ERROR SPWrapper SaveOTP Ex - Incorrect syntax near '00'.
+2020-07-03 14:02:08.3703 ERROR SPWrapper SaveOTP Ex - Incorrect syntax near '14'.
+2020-07-03 14:09:40.7506 ERROR SPWrapper SaveOTP Ex - The multi-part identifier "himanshub2008@gmail.com" could not be bound.
+2020-07-03 14:13:53.4453 ERROR SPWrapper SaveOTP Ex - The multi-part identifier "himanshub2008@gmail.com" could not be bound.
+2020-07-03 17:24:15.1137 ERROR SPWrapper GetLoginHistory Ex - Procedure or function 'sp_GetLoginHistory' expects parameter '@Email', which was not supplied.
+2020-07-03 17:36:01.4811 ERROR SPWrapper GetLoginHistory Ex - Invalid column name 'EmailId'.

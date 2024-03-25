@@ -1,0 +1,71 @@
+﻿@model IEnumerable<WEBAPP.Models.CityMaster>
+@using WEBAPP.DAL;
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<script>
+
+    function getCity(Id) {
+
+        $.ajax({
+            url: "/Company/getCity",
+            data: { 'Id': Id },
+            success: function (data) {
+
+                $("#Id").val(data.Id);
+                $("#City").val(data.City);
+
+
+            }
+        });
+    }
+
+</script>
+
+@using (Html.BeginForm("SaveCity", "Company", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form", role = "form" }))
+{
+
+
+    <div class="row">
+        <div class="col-3">
+
+            <input type="text" required class="form-control text-box" placeholder="City" id="City" name="City" />
+            <input type="hidden" name="Id" id="Id" />
+            @*<input type="hidden" name="Type" id="Type" />*@
+        </div>
+        @*<div class="col-3">
+
+                <input type="text" required class="form-control text-box" placeholder="Description" id="Description" name="Description" />
+
+            </div>*@
+        <div>
+            <input type="submit" class="btn btn-sm btn-primary" value="Save City" />
+        </div>
+
+    </div>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+
+            <td>
+                <a onclick="getCity(`@item.Id`);"> <span class="fas fa-edit">edit</span></a>
+            </td>
+        </tr>
+    }
+
+</table>

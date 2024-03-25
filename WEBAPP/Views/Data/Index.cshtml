@@ -1,0 +1,30 @@
+﻿<style>
+    #viewContent {
+        border-top: solid 2px #CCC;
+    }
+
+        #viewContent > form > span {
+            display: block;
+            color: red;
+        }
+
+        #viewContent h3 {
+            border-bottom: none;
+        }
+</style>
+@model     WEBAPP.Models.Data.ImportExcel
+@{ ViewBag.Title = "";}
+
+<h2>
+    
+   Import Excel 
+</h2>
+<div id="viewContent">
+    <pre>@ViewBag.Result</pre>
+    @using (Html.BeginForm("Index", "Data", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.TextBoxFor(m => m.file, new { type = "file" })
+        <button id="submitButton" type="submit">Upload</button>
+        @Html.ValidationMessageFor(model => model.file)
+    }
+</div>

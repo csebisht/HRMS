@@ -1,0 +1,10 @@
+2022-04-14 09:00:11.6555 ERROR SPWrapper GetJobDescription Ex - A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.)
+2022-04-14 10:07:59.7051 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-14 20:46:10.5281 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-14 20:56:59.7546 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-14 21:14:49.5776 ERROR SPWrapper SaveCourse Ex - Procedure or function sp_SaveThirdPartyMasters has too many arguments specified.
+2022-04-14 21:15:33.3069 ERROR SPWrapper SaveCourse Ex - Procedure or function sp_SaveThirdPartyMasters has too many arguments specified.
+2022-04-14 21:18:40.0719 ERROR SPWrapper SaveCourse Ex - Procedure or function sp_SaveThirdPartyMasters has too many arguments specified.
+2022-04-14 21:19:22.7042 ERROR SPWrapper SaveCourse Ex - Procedure or function sp_SaveThirdPartyMasters has too many arguments specified.
+2022-04-14 21:21:09.8260 ERROR SPWrapper GetCompanyList Ex - Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2022-04-14 22:55:49.3969 ERROR SPWrapper GetCompanyList Ex - A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.)
